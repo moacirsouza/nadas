@@ -1,2 +1,1 @@
-# nadas
-Networking and Develoment Advanced Studies
+# (Nós somos uns) NADAS: Networking and Develoment Advanced Studies
