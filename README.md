@@ -8,7 +8,7 @@ Os materiais contidos aqui, exceto quando expressamente indicado o contrário, f
 
 Este projeto é composto do estudo de dois tópicos principais:
 
-1. Lógica de Programação (Instrutor: Moka).
+1. Lógica de Programação (Instrutor: Moacir).
 2. Redes de Computadores (Instrutor: Roberto).
 
 O respositório deve ser utilizado apenas para a manutenção de códigos ou qualquer ferramental específico, _e.g._ arquivos de configuração, relacionado aos tópicos estudados.
