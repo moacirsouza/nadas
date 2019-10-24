@@ -3,7 +3,13 @@ console.log("\n");
 
 var A, B, C, D, E, F, G, H, I, J;
 
-console.log("A <- 6*(3+2)");
+console.log("Letra a) A <- 6*(3+2)");
+console.log("\tNão é possível remover os parênteses sem alterar o valor da expresão.\n\tProva:");
+A = 6*(3+2);
+console.log("A <- 6*(3+2): " + A);
+A = 6*3+2;
+console.log("A <- 6*3+2: " + A);
+console.log("\n");
 
 console.log("B <- 2+(6*(3+2))");
 console.log("C <- 2+(3*6)/(2+4)");
