@@ -11,6 +11,6 @@ Este projeto é composto do estudo de dois tópicos principais:
 1. Lógica de Programação (Instrutor: Moacir).
 2. Redes de Computadores (Instrutor: Roberto).
 
-O respositório deve ser utilizado apenas para a manutenção de códigos ou qualquer ferramental específico, _e.g._ arquivos de configuração, relacionado aos tópicos estudados.
+O respositório deve ser utilizado apenas para a manutenção de códigos ou elementos específicos relacionado aos tópicos estudados, como arquivos de configuração, de perfis de usuário etc.
 
-O documento principal, formatado com informações técnicas, referências bibliográficas e informações detalhadas dos tópicos estudados, pode ser acessado [aqui](https://docs.google.com/document/d/1xYa8GyP1_gE6QiAzuJkoPgP3zywaXRNtfOKLpRqNK94/edit?usp=sharing) (Esse é um documento privado, mantido no Google Drive. É necessário autenticar-se para acessá-lo).
+O documento principal, formatado com informações técnicas, referências bibliográficas e informações detalhadas dos estudos, pode ser acessado [aqui](https://docs.google.com/document/d/1xYa8GyP1_gE6QiAzuJkoPgP3zywaXRNtfOKLpRqNK94/edit?usp=sharing) (Esse é um documento privado, mantido no Google Drive. É necessário autenticar-se para acessá-lo).
