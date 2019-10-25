@@ -12,7 +12,7 @@ dias = Number(window.prompt("Digite a sua idade em dias: "));
 
 idadeEmDias = anos*365 + meses*umMes + dias;
 
-console.log("A sua idade em dias é: " + idadeEmDias);
+console.log("A sua idade, em dias, é: " + idadeEmDias);
 
 console.log("\n");
 console.log("[-- FIM --]");
