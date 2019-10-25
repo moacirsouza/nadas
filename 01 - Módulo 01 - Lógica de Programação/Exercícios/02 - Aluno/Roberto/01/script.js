@@ -2,17 +2,20 @@ console.log("[-- INÍCIO --]");
 console.log("\n");
 
 
-var a = 3;
-var b = 4;
-var c = "3";
+var A, B, temporario;
 
-console.log("A soma de 'a' e 'b' eh: " + (a+b));
-console.log("A variavel 'a' eh igual a variavel 'b'?" + (a==b)) 
-console.log("A variavel 'a' eh maior que a variavel 'b'?" + (a>b)) 
-console.log("A variavel 'a' eh menor que a variavel 'b'?" + (a<b)) 
-console.log("A variavel 'a' eh igual a variavel 'c'?" + (a==c))
-console.log("A variavel 'a' eh identica a variavel 'c'?" + (a===b)) 
+A = 10;
+B = 20;
 
+console.log("O valor original de A eh: " + A);
+console.log("O valor original de B é: " + B);
+
+temporario = A;
+A = B;
+B = temporario;
+
+console.log("O valor de A, depois da troca é: " + A);
+console.log("O valor de B, depois da troca é: " + B);
 
 console.log("\n");
 console.log("[-- FIM --]");
