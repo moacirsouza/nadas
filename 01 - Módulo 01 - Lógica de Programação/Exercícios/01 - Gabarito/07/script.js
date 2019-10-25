@@ -10,7 +10,7 @@ anos = Number(window.prompt("Digite a sua idade em anos: "));
 meses = Number(window.prompt("Digite a sua idade em meses: "));
 dias = Number(window.prompt("Digite a sua idade em dias: "));
 
-idadeEmDias = anos*365 + meses*umMes + dias;
+idadeEmDias = anos*umAno + meses*umMes + dias;
 
 console.log("A sua idade, em dias, é: " + idadeEmDias);
 
