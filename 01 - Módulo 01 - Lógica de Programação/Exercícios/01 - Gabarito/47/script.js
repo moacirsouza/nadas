@@ -4,14 +4,12 @@ console.log("\n");
 var primeiroValor, segundoValor, resultadoDaDivisao;
 
 primeiroValor = Number(window.prompt("Digite o primeiro valor:"));
+segundoValor = Number(window.prompt("Digite o segundo valor (NÃO PODE SER ZERO):"));
 
-do{
+while(segundoValor == 0){
+    window.alert("ATENÇÃO: Você digitou 0 para o denominador.\nDigite um valor diferente de zero.");
     segundoValor = Number(window.prompt("Digite o segundo valor (NÃO PODE SER ZERO):"));
-    
-    if( segundoValor == 0){
-        window.alert("Você digitou zero, seu merda. Não sabe ler?\nVAI TER QUE DIGITAR DE NOVO... IMBECIL...");
-    }
-}while(segundoValor == 0);
+}
 
 resultadoDaDivisao = primeiroValor/segundoValor;
 
