@@ -16,5 +16,6 @@ do{
 resultadoDaDivisao = primeiroValor/segundoValor;
 
 console.log("O valor da divisão entre " + primeiroValor + " e " + segundoValor + " é: " + resultadoDaDivisao);
+
 console.log("\n");
 console.log("[-- FIM --]");
