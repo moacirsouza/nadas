@@ -4,6 +4,6 @@ console.log("\n");
 /*
 DIGITE AQUI O SEU CÓDIGO
 */
-console.log("Teste");
+console.log("Teste");""
 console.log("\n");
 console.log("[-- FIM --]");
