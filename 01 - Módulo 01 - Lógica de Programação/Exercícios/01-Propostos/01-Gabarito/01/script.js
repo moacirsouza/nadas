@@ -30,7 +30,9 @@ for(let i=0; i<2; i++){
     somaDasNotasDoBimestre += verificaNota(i+1);
 }
 
-console.log("A média do aluno " + nomeDoAluno + " é: " + (somaDasNotasDoBimestre/2));
+media = (somaDasNotasDoBimestre/2);
+
+console.log("A média do aluno " + nomeDoAluno + " é: " + media);
 
 console.log("\n");
 console.log("[-- FIM --]");
