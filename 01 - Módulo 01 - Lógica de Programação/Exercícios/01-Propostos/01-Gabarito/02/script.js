@@ -10,7 +10,7 @@ var resultado;
 function maiorDeTres(){
     // Aqui temos um exemplo de variáveis locais (i.e., foram definidas com "let").
     // Neste caso, "numero" e "maiorNumero" não podem ser acessadas fora da 
-    // função "maiorDeTres"
+    // função "maiorDeTres".
     let numero, maiorNumero;
 
     window.alert("Este programa calcula o maior valor entre três números. Pressione 'Enter' para prosseguir.");
@@ -25,9 +25,9 @@ function maiorDeTres(){
             maiorNumero = numero;
             // A cláusula "continue" foi utilizada para evitar que o próximo "if" seja
             // executado desnecessariamente. Afinal, se durante essa iteração os valores 
-            // de "maiorNumero" e "numero" são iguais, não tem motivo para executa o próximo
-            // "if". A cláusula "continue" foi usada para "pular" diretamente para a próxima
-            // iteração do laço. 
+            // de "maiorNumero" e "numero" são iguais, não tem motivo para executar o próximo
+            // teste. A cláusula "continue" foi usada para "pular" diretamente para a próxima
+            // iteração do laço, quando o segundo número será recebido do usuário. 
             continue;
         }
         
