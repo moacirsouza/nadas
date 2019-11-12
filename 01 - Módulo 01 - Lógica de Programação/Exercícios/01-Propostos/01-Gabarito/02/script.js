@@ -1,11 +1,16 @@
 console.log("[-- INÍCIO --]");
 console.log("\n");
 
+// Não há necessidade de criar uma variável global para receber o resultado.
+// Ela foi definida com "var" apenas por conveniência/costume, mas um "let"
+// poderia ter sido usado sem problemas.
 var resultado;
 
+// Lembre-se: Aqui é apenas a DEFINIÇÃO da função, não a chamada.
 function maiorDeTres(){
-    // As variáveis "numero" e "maiorNumero" são locais (i.e., foram definidas com "let")
-    // e não podem ser acessadas fora da função "maiorDeTres"
+    // Aqui temos um exemplo de variáveis locais (i.e., foram definidas com "let").
+    // Neste caso, "numero" e "maiorNumero" não podem ser acessadas fora da 
+    // função "maiorDeTres"
     let numero, maiorNumero;
 
     window.alert("Este programa calcula o maior valor entre três números. Pressione 'Enter' para prosseguir.");
@@ -18,13 +23,15 @@ function maiorDeTres(){
         // não funcionará.
         if(i == 0){
             maiorNumero = numero;
-            // A cláusula "continue" é necessária para evitar que o próximo "if" seja
-            // executado desnecessariamente. Afinal, se "maiorNumero" e "numero" são
-            // iguais, não tem motivo de verificar se um é maior que o outro.
+            // A cláusula "continue" foi utilizada para evitar que o próximo "if" seja
+            // executado desnecessariamente. Afinal, se durante essa iteração os valores 
+            // de "maiorNumero" e "numero" são iguais, não tem motivo para executa o próximo
+            // "if". A cláusula "continue" foi usada para "pular" diretamente para a próxima
+            // iteração do laço. 
             continue;
         }
         
-        if(  numero > maiorNumero ){
+        if(numero > maiorNumero){
             maiorNumero = numero;
         }
     }
@@ -32,9 +39,11 @@ function maiorDeTres(){
     return maiorNumero;
 }
 
-// Foi preciso usar uma variável externa para receber o resultado da função,
-// caso contrário, seria possível usar a variável "maiorNumero" do próprio retorno.
+// AQUI é onde a função é efetivamente chamada ou invocada. Perceba que, como se trata
+// de uma FUNÇÃO e não um PROCEDIMENTO, é necessário armazenar o valor do retorno (realizado
+// pela cláusula "return") em uma variável para depois manipulá-lo.
 resultado = maiorDeTres();
+
 console.log("O maior valor é: " + resultado);
 
 console.log("\n");
