@@ -12,6 +12,7 @@ if(segundoValor>primeiroValor){
     maior = segundoValor;
 }
 
+
 console.log("O maior valor entre " + primeiroValor + " e " + segundoValor + " é: " + maior);
 
 console.log("\n");
