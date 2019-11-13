@@ -10,7 +10,7 @@ permissaoParaVotar = "";
 nome = window.prompt("Informe o nome do(a) cidadão(ã):");
 anoDeNascimento = Number(window.prompt("Informe o ano de nascimento de " + nome + ":"));
 
-if((anoAtual-anoDeNascimento)<idadeMinimaParaSerVotante){
+if((anoAtual-anoDeNascimento) < idadeMinimaParaSerVotante){
     permissaoParaVotar = "NÃO ";
 }
 
