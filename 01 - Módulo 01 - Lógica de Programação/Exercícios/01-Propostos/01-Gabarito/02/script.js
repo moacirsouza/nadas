@@ -15,8 +15,8 @@ function maiorDeTres(){
 
     window.alert("Este programa calcula o maior valor entre três números. Pressione 'Enter' para prosseguir.");
 
-    for(let i = 0; i<3; i++){
-        numero = Number(window.prompt("Digite o valor " + (i+1) + " :"));
+    for(let i=0; i<3; i++){
+        numero = Number(window.prompt("Digite o valor " + (i+1) + ":"));
 
         // Esse "if" é necessário, porque "maiorNumero" não foi inicializado com nenhum
         // valor. Se essa verificação não for realizada, o restante das comparações
@@ -39,9 +39,9 @@ function maiorDeTres(){
     return maiorNumero;
 }
 
-// AQUI é onde a função é efetivamente chamada ou invocada. Perceba que, como se trata
-// de uma FUNÇÃO e não um PROCEDIMENTO, é necessário armazenar o valor do retorno (realizado
-// pela cláusula "return") em uma variável para depois manipulá-lo.
+// AQUI é onde a função é efetivamente chamada ou invocada. Perceba que, como se
+// trata de uma FUNÇÃO e não um PROCEDIMENTO, é necessário armazenar o valor do
+// retorno (realizado pela cláusula "return") em uma variável para depois manipulá-lo.
 resultado = maiorDeTres();
 
 console.log("O maior valor é: " + resultado);
