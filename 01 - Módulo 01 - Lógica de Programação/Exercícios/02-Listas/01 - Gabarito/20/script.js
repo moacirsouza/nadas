@@ -8,7 +8,7 @@ segundoValor = Number(window.prompt("Informe o segundo valor:"));
 
 valoresEmOrdemCrescente = primeiroValor + ", " + segundoValor;
 
-if(segundoValor<primeiroValor){
+if(segundoValor < primeiroValor){
     valoresEmOrdemCrescente = segundoValor + ", " + primeiroValor;
 }
 
