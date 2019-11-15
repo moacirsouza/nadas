@@ -41,7 +41,8 @@ function maiorDeTres(){
 
 // AQUI é onde a função é efetivamente chamada ou invocada. Perceba que, como se
 // trata de uma FUNÇÃO e não um PROCEDIMENTO, é necessário armazenar o valor do
-// retorno (realizado pela cláusula "return") em uma variável para depois manipulá-lo.
+// retorno (realizado pela cláusula "return", lá dentro da função) em uma variável
+// para depois manipulá-lo.
 resultado = maiorDeTres();
 
 console.log("O maior valor é: " + resultado);
