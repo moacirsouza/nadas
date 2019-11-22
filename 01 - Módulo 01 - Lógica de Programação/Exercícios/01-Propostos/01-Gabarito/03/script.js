@@ -1,9 +1,7 @@
 console.log("[-- INÍCIO --]");
 console.log("\n");
 
-/*
-DIGITE AQUI O SEU CÓDIGO
-*/
+console.log("Solução na próxima aula :D");
 
 console.log("\n");
 console.log("[-- FIM --]");
