@@ -48,8 +48,8 @@ while( finalizador != "FECHAR"){
 // O "pop()" é um método primitivo do JavaScript, presente
 // em praticamente todas as linguagens de programação, cuja
 // função é remover o último item do Array.
-// O valor dele neste programa é que a lista final não vai
-// conter o valor do "finalizador".
+// A importâncoa dele neste programa é que a lista final
+// não vai conter o valor do "finalizador".
 listaDeCompras.pop();
 
 console.log("PARABÉNS, sua lista de compras foi criada!\n\n");
