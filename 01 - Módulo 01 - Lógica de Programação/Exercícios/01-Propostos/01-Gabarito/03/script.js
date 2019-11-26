@@ -9,23 +9,25 @@ var usuario, listaDeCompras, contador, finalizador;
 // aritméticas
 contador = 0;
 
-// OBRIGATÓRIO: Inicia o "finalizador" como uma String vazia,
-// uma vez que ele vai ser o parâmetro que o
-// laço de entrada vai verificar a cada iteração
+// TODO: Alterar este comentário, porque a inicializaçãode
+// "finalizador" é OPCIONAL
+// OPCIONAL: Inicia o "finalizador" como uma String vazia,
+// uma vez que ele vai ser o parâmetro que o laço de entrada
+// vai verificar a cada iteração
 finalizador = "";
 
 // OBRIGATÓRIO: Inicia a lista como um Array vazio.
 // Também é possível iniciá-lo com valores, mas se
-// ele vai ser sobrescrito quando o usuário começar a
-// informar a lista de compras, para quê gastar memória
-// com isso? ¯\_(ツ)_/¯
+// ele vai ser sobrescrito quando o usuário começar
+// A informar a lista de compras, para quê gastar
+// memória com isso? ¯\_(ツ)_/¯
 listaDeCompras = [];
 
 usuario = window.prompt("Crie sua Lista de Compras!\n\nPara começar, por favor, informe o seu nome:");
 
 while( finalizador != "FECHAR"){
     // Este é um "truqe" divertido, para mostrar o número
-    // da mensagem com, no mínimo, duas posições
+    // da mensagem com, no mínimo, duas posições.
     let mostrador = (contador+1).toString().padStart(2,"0");
 
     // Como a mensagem estava muito comprida, decidi colocá-la
