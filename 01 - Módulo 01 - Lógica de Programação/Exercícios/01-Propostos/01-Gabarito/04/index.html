@@ -5,12 +5,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lista de Exercícios Propostos - Moacir da Cruz Souza Filho</title>
-	    <script src="script.js" defer></script>
+		<script src="script.js" defer></script>
+		<style>
+			/*
+				Muda o estilo da numeração da lista ordenada
+			*/
+			ol{
+				list-style-type: decimal-leading-zero;
+			}
+
+			/*
+				Classe para colorir itens de azul
+			*/
+			.azul{
+				color: #107896;
+			}
+		</style>
 	</head>
 
 	<body>
 		<p>
-			03) Crie um aplicativo de lista de compras com os seguintes requisitos:
+			<strong class="azul">ATENÇÃO</strong>: Novos requisitos estarão, <strong><em>SEMPRE</em></strong>, destacados em <label class="azul">AZUL</label>
+			<br>
+			<br>
+			04) Crie um aplicativo de lista de compras com os seguintes requisitos:
 			<br>
 			<ol>
 				<li>Solicite o nome do usuário na inicialização;</li>
@@ -19,8 +37,8 @@
 					<li>Você só para de receber itens quando o usuário digitar uma palavra chave, à sua escolha;</li>
 				</ol>
 				<li>Ao finalizar, imprima o conteúdo da lista, <em>i.e.</em>, todos os itens informados pelo usuário;</li>
-				<li>A lista não pode receber itens vazios, <em>i.e.</em>, se usuário informar um item vazio, é preciso solicitar novamente</li>
-				<li>A lista não pode apresentar itens com espaços extras no início ou no fim do nome</li>
+				<li class="azul">A lista não pode receber itens vazios, <em>i.e.</em>, se usuário informar um item vazio, é preciso solicitá-lo novamente;</li>
+				<li class="azul">A lista não pode apresentar itens que contenham espaços extras no início ou no fim;</li>
 			</ol>
 			<br>
 			O uso das seguintes estruturas é obrigatório para resolução desta questão:
