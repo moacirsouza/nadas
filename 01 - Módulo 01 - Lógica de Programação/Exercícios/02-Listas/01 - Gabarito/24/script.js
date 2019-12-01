@@ -29,9 +29,11 @@ if(totalDeVendas > tetoParaComissaoNivelUm){
 
 // Se a variável "salarioFinal" não fosse inicializada com 0,
 // todas as vezes que o total de vendas fosse menor ou igual
-// ao teto, o uso do "+=" retornaria um erro e ao invés de usar
-// apenas um "if", um "if-else" seria obrigatório
-salarioFinal += salarioFixo + (tetoParaComissaoNivelUm*comissaoNivelUm);
+// ao teto, o uso do "+=" retornaria "NaN" (Not a Number), pois
+// tentaria usar o valor de "salarioFinal", que neste momento seria
+// "undefined", no cálculo. Ao forçar aquela atribuição logo cedo no
+// código, somos capazes de evitar o uso de um "else" extra
+salarioFinal += salarioFixo + (totalDeVendas*comissaoNivelUm);
 
 console.log("O salário final do(a) vendedor(a) " + vendedor + " é de: " + salarioFinal);
 
