@@ -22,14 +22,13 @@ finalizador = "";
 // A informar a lista de compras, para quê gastar
 // memória com isso? ¯\_(ツ)_/¯
 listaDeCompras = [];
-
+listaDeComprassemespaco = listaDeCompras.trim();
 usuario = window.prompt("Crie sua Lista de Compras!\n\nPara começar, por favor, informe o seu nome:");
 
 while( finalizador != "FECHAR"){
     // Este é um "truqe" divertido, para mostrar o número
     // da mensagem com, no mínimo, duas posições.
     let mostrador = (contador+1).toString().padStart(2,"0");
-
     // Como a mensagem estava muito comprida, decidi colocá-la
     // em uma variável. É uma ação opcional, mas valiosa, pois
     // se ela precisar mudar, o código em si, a lógica, não muda.
@@ -41,7 +40,7 @@ while( finalizador != "FECHAR"){
     // Ela é avaliada da seguinte forma: "a = (b = c)".
     // Logo, o valor de "c" é passado para "b" que, por fim,
     // é passado para "a".
-    finalizador = listaDeCompras[contador] = window.prompt(mensagem + mostrador);
+    finalizador = listaDeComprassemespaco[contador] = window.prompt(mensagem + mostrador);
 
     // Incrementa o contador a cada iteração
     contador++;
@@ -52,7 +51,7 @@ while( finalizador != "FECHAR"){
 // função é remover o último item do Array.
 // A importâncoa dele neste programa é que a lista final
 // não vai conter o valor do "finalizador".
-listaDeCompras.pop();
+listaDeComprassemespaco.pop();
 
 console.log("PARABÉNS, sua lista de compras foi criada!\n\n");
 console.log("+---------------------------------");
@@ -62,9 +61,9 @@ console.log("+---------------------------------");
 // Por fim, a lista é lida com um "for" (Afinal, agora sabemos
 // a quantidade exata de itens contidos nela!), afim de mostrar
 // o resultado na tela para o usuário
-for(let i=0; i<listaDeCompras.length; i++){
-    let mostrador = (i+1).toString().padStart(2,"0");
-    console.log("Item " + mostrador + ": " + listaDeCompras[i]);
+for(let i=0; i<listaDeComprassemespaco.length; i++){
+    let mostradorsemespaco = (i+1).toString().padStart(2,"0");
+    console.log("Item " + mostrador + ": " + listaDeComprassemespaco[i]);
 }
 
 console.log("\n");
