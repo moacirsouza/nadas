@@ -1,7 +1,7 @@
 console.log("[-- INÍCIO --]");
 console.log("\n");
 
-var usuario, listaDeCompras, contador, finalizador;
+var usuario, listaDeCompras, contador, finalizador, itemVazio;
 
 // OBRIGATÓRIO: Inicia o "contador" da quantidade de itens
 // da lista como zero. Ele vai ser utilizado como índice
@@ -22,7 +22,12 @@ finalizador = "";
 // A informar a lista de compras, para quê gastar
 // memória com isso? ¯\_(ツ)_/¯
 listaDeCompras = [];
+// <<<<<<< HEAD
 listaDeComprassemespaco = listaDeCompras.trim();
+=======
+
+// Atende o requisito 01.
+// >>>>>>> 6aae996e86a3eee22301a561b88b2e8e1a05264e
 usuario = window.prompt("Crie sua Lista de Compras!\n\nPara começar, por favor, informe o seu nome:");
 
 while( finalizador != "FECHAR"){
@@ -33,14 +38,28 @@ while( finalizador != "FECHAR"){
     // em uma variável. É uma ação opcional, mas valiosa, pois
     // se ela precisar mudar, o código em si, a lógica, não muda.
     // Só quem muda é a mensagem ;).
-    let mensagem = "(ATENÇÃO: Para finalizar, digite FECHAR, em letras maiúsculas e sem espaços)\n\nInforme o item: ";
+    let mensagem = "(ATENÇÃO: Para finalizar, digite FECHAR, em letras maiúsculas e sem espaços).\n\nInforme o item: ";
+    mensagem += mostrador;
 
+// <<<<<<< HEAD
     // Este é outro "truque" interessante.
     // A expressão a seguir é do tipo: "a = b = c".
     // Ela é avaliada da seguinte forma: "a = (b = c)".
     // Logo, o valor de "c" é passado para "b" que, por fim,
     // é passado para "a".
     finalizador = listaDeComprassemespaco[contador] = window.prompt(mensagem + mostrador);
+=======
+    // Atende o requisito 03,
+    do{
+        // Este é outro "truque" interessante.
+        // A expressão a seguir é do tipo: "a = b = c".
+        // Ela é avaliada da seguinte forma: "a = (b = c)".
+        // Logo, o valor de "c" é passado para "b" que, por fim,
+        // é passado para "a".
+        finalizador = listaDeCompras[contador] = window.prompt(mensagem).trim(); // Atende o requisito 04.
+    }while( listaDeCompras[contador] == "")
+    
+//>>>>>>> 6aae996e86a3eee22301a561b88b2e8e1a05264e
 
     // Incrementa o contador a cada iteração
     contador++;
