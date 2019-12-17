@@ -6,7 +6,7 @@ var listadecompras = ['banana', 'maça', 'uva'];
 
 nome = window.prompt("Digite seu nome: ");
 console.log("Cliente: " + nome);
-for (var i=0, i<listadecompras.lenght, i++){
+for (var  i=0, i<listadecompras.lenght, i++){
     console.log("Item: " + listadecompras[i]);
    }
 
