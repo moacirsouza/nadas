@@ -6,11 +6,12 @@ Os materiais contidos aqui, exceto quando expressamente indicado o contrário, f
 
 # Do uso do Repositório
 
-Este projeto é composto do estudo de dois tópicos principais:
+Este projeto é composto do estudo dos seguintes ~de dois~ tópicos ~principais~:
 
-1. Lógica de Programação (Instrutor: Moacir).
-2. Redes de Computadores (Instrutor: Roberto).
+1. Lógica de Programação (Instrutor: [Moka](https://github.com/moacirsouza))
+2. Linguagens de Programação - Módulo Python (Instrutor: [Moka](https://github.com/moacirsouza))
+3. Redes de Computadores (Instrutor: [Roberto](https://github.com/robertolopesmendonca))
 
 O respositório deve ser utilizado apenas para a manutenção de códigos ou elementos específicos relacionado aos tópicos estudados, como arquivos de configuração, de perfis de usuário etc.
 
-O documento principal, formatado com informações técnicas, referências bibliográficas e informações detalhadas dos estudos, pode ser acessado [aqui](https://docs.google.com/document/d/1xYa8GyP1_gE6QiAzuJkoPgP3zywaXRNtfOKLpRqNK94/edit?usp=sharing) (Esse é um documento privado, mantido no Google Drive. É necessário autenticar-se para acessá-lo).
+O documento principal, formatado com informações técnicas, referências bibliográficas e detalhes dos materiais de estudo, pode ser acessado [aqui](https://docs.google.com/document/d/1xYa8GyP1_gE6QiAzuJkoPgP3zywaXRNtfOKLpRqNK94/edit?usp=sharing) (Este é um documento privado, mantido no Google Drive. É necessário autenticar-se para acessá-lo).
