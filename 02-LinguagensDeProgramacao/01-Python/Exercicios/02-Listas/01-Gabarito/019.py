@@ -6,4 +6,4 @@ nome03 = input('Informe o nome do terceiro(a) aluno(a): ')
 nome04 = input('Informe o nome do quarto(a) aluno(a): ')
 alunos = [nome01, nome02, nome03, nome04]
 quemVaiApagar = choice(alunos)
-print('O(a) escolhido(a) foi: {}'.format(quemVaiApagar))
+print('O(a) aluno(a) escolhido(a) foi: {}'.format(quemVaiApagar))
