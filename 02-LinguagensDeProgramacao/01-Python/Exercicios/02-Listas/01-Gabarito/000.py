@@ -1,8 +1,6 @@
-print('[--  --]\n')
+print('[--   --]\n')
 
 """
-024. Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com o nome "SANTO".
-
 025. Crie um programa que leia o nome de uma pessoa e diga se ela tem "SILVA" no nome.
 
 026. Faça um programa que leia uma frase pelo teclado e mostre: a) Quantas vezes aparece a letra "A"; b) Em que posição ela aparece a primeira vez; c) Em que posição ela aparece a última vez.
