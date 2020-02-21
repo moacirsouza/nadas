@@ -1,3 +1,6 @@
-# Linguagens de Programação - Módulo Python
+# Linguagens de Programação
 
-Exercícios de Python
+Linguagens de Programação são a formalização de um conjunto de instruções cuja 
+principal funcionalidade é viabilizar um meio unificado  de comunicação com
+computadores.
+
