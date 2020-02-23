@@ -4,11 +4,12 @@ Repositório do projeto "NaDAS: Networking and Development Advanced Studies", an
 
 Este projeto é composto do estudo dos seguintes ~de dois~ tópicos ~principais~:
 
-1. [Desenvolvimento de Sistemas](/01-DesenvolvimentoDeSistemas)
-   1. [Lógica de Programação](/01-DesenvolvimentoDeSistemas/01-LogicaDeProgramacao): Instrutor [Moka](https://github.com/moacirsouza)
-   2. Linguagens de Programação - Módulo Python: Instrutor [Moka](https://github.com/moacirsouza)
-2. Redes de Computadores: Instrutor [Roberto](https://github.com/robertolopesmendonca)
-3. Sistemas Operacionais: Instrutor [Moka](https://github.com/moacirsouza)
+1. [Desenvolvimento de Sistemas](01-DesenvolvimentoDeSistemas)
+   1. [Lógica de Programação](01-DesenvolvimentoDeSistemas/01-LogicaDeProgramacao): Instrutor [Moka](https://github.com/moacirsouza)
+   2. [Linguagens de Programação](01-DesenvolvimentoDeSistemas/01-LogicaDeProgramacao/)
+      1. [Python](01-DesenvolvimentoDeSistemas/02-LinguagensDeProgramacao/01-Python): Instrutor [Moka](https://github.com/moacirsouza)
+2. [Redes de Computadores](02-RedesDeComputadores): Instrutor [Roberto](https://github.com/robertolopesmendonca)
+3. [Sistemas Operacionais](03-SistemasOperacionais): Instrutor [Moka](https://github.com/moacirsouza)
 
 Os materiais contidos aqui, exceto quando expressamente indicado o contrário, foram criados pelos autores e são de suas respectivas propriedades intelectuais. A utilização deste conteúdo fica restrita sob os termos da [Licença MIT associada ao repositório](https://github.com/moacirsouza/nadas/blob/master/LICENSE).
 
