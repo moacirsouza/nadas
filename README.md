@@ -5,8 +5,8 @@ Repositório do projeto "NaDAS: Networking and Development Advanced Studies", an
 Este projeto é composto do estudo dos seguintes ~de dois~ tópicos ~principais~:
 
 1. Desenvolvimento de Sistemas
-  1. Lógica de Programação: Instrutor [Moka](https://github.com/moacirsouza)
-  2. Linguagens de Programação - Módulo Python: Instrutor [Moka](https://github.com/moacirsouza)
+   1. Lógica de Programação: Instrutor [Moka](https://github.com/moacirsouza)
+   2. Linguagens de Programação - Módulo Python: Instrutor [Moka](https://github.com/moacirsouza)
 2. Redes de Computadores: Instrutor [Roberto](https://github.com/robertolopesmendonca)
 3. Sistemas Operacionais: Instrutor [Moka](https://github.com/moacirsouza)
 
