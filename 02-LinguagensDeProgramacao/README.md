@@ -1,8 +1,6 @@
 # Linguagens de Programação
 
-Linguagens de Programação são a formalização de um conjunto de instruções cuja
-principal funcionalidade é viabilizar um meio unificado  de comunicação com
-computadores.
+Linguagens de Programação são a formalização de um conjunto de instruções cuja principal funcionalidade é viabilizar um meio unificado  de comunicação com computadores.
 
 Para saber mais, acesse [a definição oficial da Wikipedia.](https://en.wikipedia.org/wiki/Programming_language)
 
