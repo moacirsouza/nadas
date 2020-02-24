@@ -29,6 +29,10 @@ primeiraOcorrenciaDeA = fraseProcessada.find('a')+1
 ### por isso é importante adicionar o 1 ao resultado da busca.
 ultimaOcorrenciaDeA = fraseProcessada.rfind('a')+1
 
+### O uso das aspas duplas triplas facilita a impressão do
+### texto com a manutenção da formatação original, sem a 
+### necessidade de usar caracteres de escape, como o "\n"
+### para criação de nova linha etc.
 print("""
 A letra 'a' aparece {} vezes na frase.
 A primeira ocorrência da letra 'a' na frase é na posição {}.
