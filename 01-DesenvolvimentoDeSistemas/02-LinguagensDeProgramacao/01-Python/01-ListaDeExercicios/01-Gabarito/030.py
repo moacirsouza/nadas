@@ -15,7 +15,7 @@ mensagem = '\nO número {} é ímpar.\n'.format(numero)
 ### divisão. Qualquer número par, ao ser dividido por 2
 ### retorna resto 0, enquanto que um número ímpar retorna
 ### valores diferentes disto.
-if (numero%2 == 0):
+if numero%2 == 0:
     mensagem = '\nO número {} é par.\n'.format(numero)
 
 ### Imprime a mensagem, que será alterada de acordo com a
