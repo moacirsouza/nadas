@@ -37,9 +37,7 @@ else:
 ### do caso oposto e dentro dele define-se o outro conteúdo possível
 ### da mensagem. Por fim, um "print" único imprime a mensagem, que
 ### sofrerá alteração dependendo da entrada do usuário.
-""" mensagem = '\nMais sorte da próxima vez!\nVocê escolheu {}, mas o computador pensou em {}'.format(numero,senha)
-
-if numero == senha:
-    mensagem = '\nOlha só, acertou!\nVocê e o computador escolheram {}!'.format(numero)
-
-print(mensagem) """
+# mensagem = '\nMais sorte da próxima vez!\nVocê escolheu {}, mas o computador pensou em {}'.format(numero,senha)
+# if numero == senha:
+#     mensagem = '\nOlha só, acertou!\nVocê e o computador escolheram {}!'.format(numero)
+# print(mensagem)
