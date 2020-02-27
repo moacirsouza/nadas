@@ -11,6 +11,13 @@ velocidade = float(input('Qual a velocidade do carro (Em Km/h): '))
 limiteDeVelocidade = 80
 custoPorQuilometroExcedido = 7
 
+### Avalia se a velocidade máxima foi ultrapassada e calcula o valor
+### da multa. É possível omitir o "else", como em casos anteriores.
+### Pode-se formatar uma mensagem única, que será modificada juntamente
+### com verificação da condição, ou simplesmente mostrar uma mensagem
+### genérica, que não está relacionada com o limite de velocidade. Essa
+### segunda alternativa foi mostrada pelo Guanabara, na resolução deste
+### exercício.
 if velocidade > limiteDeVelocidade:
     multa = (velocidade-limiteDeVelocidade)*custoPorQuilometroExcedido
     print('\nVocê ultrapassou o limite de velocidade.\nSua multa é de R${:.2f}.\n'.format(multa))
