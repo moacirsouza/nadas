@@ -5,4 +5,4 @@ print('[-- Crie um programa que leia um número Real qualquer pelo teclado e mos
 from math import trunc
 real = float(input('Digite um número real: '))
 parteInteira = trunc(real)
-print('A parte real do número {} é {}.'.format(real, parteInteira))
+print('A parte inteira do número {} é {}.'.format(real, parteInteira))
