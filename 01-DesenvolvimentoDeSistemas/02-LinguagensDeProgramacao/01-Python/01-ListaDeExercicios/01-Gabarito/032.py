@@ -17,11 +17,7 @@ ano = int(input('Informe o número do ano para saber se ele é bissexto: '))
 ### O conceito matemático de divisibilidade é usado para realizar
 ### os testes deste programa. Um número é divisível por outro 
 ### quando o resto da divisão entre eles é zero.
-if ano%4 != 0:
-    print('Ano comum.')
-elif ano%100 != 0:
-    print('Bissexto.')
-elif ano%400 != 0:
-    print('Ano comum')
+if ano%4 != 0 or ano%400 != 0 and ano%100 == 0:
+    print('{} é um ano comum.'.format(ano))
 else:
-    print('Bissexto')
+    print('{} é um ano Bissexto'.format(ano))
