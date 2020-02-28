@@ -1,0 +1,13 @@
+# Printar informações sobre a entrada
+recebe=input('Digite alguma coisa: ')
+print('O tipo primitivo é: {} '.format(type(recebe)))
+print('Tem letras e números: {} '.format(recebe.isalnum()))
+print('É um número: {}'.format(recebe.isnumeric()))
+print('É um número inteiro: {}'.format(recebe.isdecimal()))
+print('É um dígito: {}'.format(recebe.isdigit()))
+print('É um identificador válido: {}'.format(recebe.isidentifier()))
+print('É um caracter immprimível: {}'.format(recebe.isprintable()))
+print('É de espaços: {}'.format(recebe.isspace()))
+print('É todo caixa alta: {}'.format(recebe.isupper()))
+print('É todo caixa baixa: {}'.format(recebe.islower()))
+print('Apenas a primeira maiúscula: {}'.format(recebe.istitle()))
