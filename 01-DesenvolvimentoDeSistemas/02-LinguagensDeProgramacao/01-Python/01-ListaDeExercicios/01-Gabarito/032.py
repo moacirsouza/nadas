@@ -20,17 +20,17 @@ ano = int(input('Informe o número do ano para saber se ele é bissexto: '))
 ### quando o resto da divisão entre eles é zero.
 
 ### Método 1: Transpondo o pseudocódigo exatamente como ele foi descrito.
-# comum = 'Ano comum'
-# bissexto = 'Ano Bissexto'
+comum = 'Ano comum'
+bissexto = 'Ano Bissexto'
 
-# if ano%4 != 0:
-#     print(comum)
-# elif ano%100 != 0:
-#     print(bissexto)
-# elif ano%400 != 0:
-#     print(comum)
-# else:
-#     print(bissexto)
+if ano%4 != 0:
+    print(comum)
+elif ano%100 != 0:
+    print(bissexto)
+elif ano%400 != 0:
+    print(comum)
+else:
+    print(bissexto)
 
 ### Método 2: Usando apenas um "if".
 if ano%4 != 0 or ano%400 != 0 and ano%100 == 0:
