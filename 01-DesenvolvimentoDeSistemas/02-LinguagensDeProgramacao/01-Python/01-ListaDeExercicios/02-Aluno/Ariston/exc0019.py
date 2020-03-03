@@ -9,4 +9,4 @@ aluno03 = str(input('Digite o nome do Aluno 03: '))
 aluno04 = str(input('Digite o nome do Aluno 04: '))
 classe = [aluno01,aluno02,aluno03,aluno04]
 escolhido = choice(classe)
-print('O aluno escolhido foi {}'.format(escolhido))
+print('\nO aluno escolhido foi {}'.format(escolhido))
