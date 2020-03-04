@@ -1,5 +1,5 @@
 print("""
-030) Crie um programa em PYTHON que: Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou ÍMPAR.
+\033[1;37;44m 030) \033[m Crie um programa em PYTHON que: Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou ÍMPAR.
 """)
 numero = int(input('Digite um número inteiro: '))
 if (numero%2)==0:
