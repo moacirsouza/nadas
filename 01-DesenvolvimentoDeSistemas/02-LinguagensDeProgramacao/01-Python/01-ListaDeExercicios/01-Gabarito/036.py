@@ -16,18 +16,14 @@ tempoDePagamento = int(input('Informe o tempo de pagamento (Em anos): ').strip()
 percentualDoSalario = 0.3
 limiteSuperior = salarioDoComprador*percentualDoSalario
 parcelaMensal = valorDoImovel/(tempoDePagamento*12)
-mensagemDeAprovacao = """
-Parabéns! Seu financiamento foi aprovado!
-Veja os detalhes financeiros abaixo.
-"""
+mensagemDeAprovacao = '\nParabéns! Seu financiamento foi aprovado!'
 situacaoDoFinanciamento = 'APROVADO'
 
 if parcelaMensal > limiteSuperior:
-    mensagemDeAprovacao = """
-Sinto muito. Seu financiamento foi negado.
-Veja os detalhes financeiros abaixo.
-"""
+    mensagemDeAprovacao = '\nSinto muito. Seu financiamento foi negado.'
     situacaoDoFinanciamento = 'NEGADO'
+
+mensagemDeAprovacao += '\nVeja os detalhes financeiros abaixo.'
 
 print(mensagemDeAprovacao.format(parcelaMensal))
 print("""
