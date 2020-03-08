@@ -1,5 +1,5 @@
 print("""
-027) Crie um programa em PYTHON que: leia o nome completo de uma pessoa, mostrando em seguida 
+\033[1;37;44m 027) \033[m Crie um programa em PYTHON que: leia o nome completo de uma pessoa, mostrando em seguida 
 o primeiro e o último nome separadamente.
 """)
 nome = str(input('Digite seu nome completo: '))

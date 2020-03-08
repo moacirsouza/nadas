@@ -1,5 +1,5 @@
 print("""
-022) Crie um programa em PYTHON que: leia o nome completo de uma pessoa e mostre: 
+\033[1;37;44m 022) \033[m Crie um programa em PYTHON que: leia o nome completo de uma pessoa e mostre: 
 a) O nome com todas as letras maiúsculas; 
 b) O nome com todas as letras minúsculas; 
 c) Quantas letras ao todo (sem considerar espaços); 
