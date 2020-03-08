@@ -23,7 +23,7 @@ if parcelaMensal > limiteSuperior:
     mensagemDeAprovacao = '\nSinto muito. Seu financiamento foi negado.'
     situacaoDoFinanciamento = 'NEGADO'
 
-mensagemDeAprovacao += '\nVeja os detalhes financeiros abaixo.'
+mensagemDeAprovacao += '\nVeja os detalhes financeiros a seguir.'
 
 print(mensagemDeAprovacao.format(parcelaMensal))
 print("""
