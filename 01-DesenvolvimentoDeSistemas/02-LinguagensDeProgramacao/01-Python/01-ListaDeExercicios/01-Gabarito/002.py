@@ -1,5 +1,5 @@
 print("""
-Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas.
+002) Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas.
 """)
 
 ### Entrada do programa: Recebe o nome como texto ("string").
