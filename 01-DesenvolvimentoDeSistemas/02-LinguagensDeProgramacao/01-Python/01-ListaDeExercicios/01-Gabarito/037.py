@@ -67,7 +67,7 @@ em Octal, é {} e em Hexadecimal, é {}.
 else:
     resultado = '\nVocê escolheu uma opção inexistente. Tente novamente.'
 
-### Por causa da manipulação do texto, realizada na definição de
+### Por causa da manipulação do texto, realizada na definição das
 ### variáveis e dentro das estruturas de controle, o "print" final
 ### acabou ficando bem simples. Independente do que for escolhido
 ### pelo usuário, o programa, agnosticamente, apenas imprime o
