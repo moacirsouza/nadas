@@ -1,11 +1,12 @@
 print("""
-034) Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento.
-Para salários superiores a R$1.250,00, calcule um aumento de 10%.
-Para os inferiores ou iguais, o aumento é de 15%.
+035) Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se
+elas podem ou não formar um triângulo.
 """)
-salariodofuncionario = float(input('Digite o valor do seu salário: '))
-if salariodofuncionario > 1250:
-    novosalario = salariodofuncionario + (salariodofuncionario*10/100)
+L1 = float(input('Digite o comprimento da primeira reta: '))
+L2 = float(input('Digite o comprimento da segunda reta: '))
+L3 = float(input('Digite o comprimento da terceira reta: '))
+if L1 < L2 + L3 and L2 < L1 + L3 and L3 < L1 + L2:
+    print('Os segmentos formam um triângulo: ')
 else:
-    novosalario = salariodofuncionario + (salariodofuncionario*15/100)
-print('O seu novo salário será {:.2f}'.format(novosalario))
+    print('Os segmentos não formam um triângulo')
+

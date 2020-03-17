@@ -1,9 +1,20 @@
 print("""
-032) Faça um programa que leia um ano qualquer e moste se ele é BISSEXTO.
+033) Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
 """)
-ano = int(input('Que ano quer analisar?'))
-if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
-    print('O ano {} é BISSEXTO'.format(ano))
-else:
-    print('O ano {} NÃO É BISSEXTO'.format(ano))
-
+a = int(input('Primeiro valor: '))
+b = int(input('Segundo valor: '))
+c = int(input('Terceiro valor: '))
+# Verificando quem é menor
+menor = a
+if b<a and b<c:
+    menor = b
+if c<a and c<b:
+    menor = c
+# Verificando quem é o maior
+maior = a
+if b>a and b>c:
+    maior = b
+if c>a and c>b:
+    maior = c
+print('O menor valor digitado foi {}'.format(menor))
+print('O maior valor digitado foi {}'.format(maior))
