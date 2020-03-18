@@ -1,6 +1,4 @@
-print("""
-Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros 
-"""')
+print('[-- Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros --]\n')
 metros = float(input('Informe um valor em metros: '))
 decimetros  = metros*10
 centimetros = metros*100

@@ -1,6 +1,4 @@
-print("""
-Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido. 
-"""')
+print('[-- Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido. --]\n')
 from random import choice
 nome01 = input('Informe o nome do primeiro(a) aluno(a): ')
 nome02 = input('Informe o nome do segundo(a) aluno(a): ')

@@ -1,6 +1,4 @@
-print("""
-Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ele. 
-"""')
+print('[-- Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ele. --]\n')
 entradaDoTeclado=input('Digite algo: ')
 print('O tipo primitivo do conteúdo informado é: {}'.format(type(entradaDoTeclado)))
 print('É um composto de letras e/ou números? Resposta: {}'.format(entradaDoTeclado.isalnum()))

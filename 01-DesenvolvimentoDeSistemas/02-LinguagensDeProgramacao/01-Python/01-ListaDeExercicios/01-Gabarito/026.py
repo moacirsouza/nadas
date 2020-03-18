@@ -1,6 +1,4 @@
-print("""
-Faça um programa que leia uma frase pelo teclado e mostre: a) Quantas vezes aparece a letra "A"; b) Em que posição ela aparece a primeira vez; c) Em que posição ela aparece a última vez. 
-"""')
+print('[-- Faça um programa que leia uma frase pelo teclado e mostre: a) Quantas vezes aparece a letra "A"; b) Em que posição ela aparece a primeira vez; c) Em que posição ela aparece a última vez. --]\n')
 
 ### Entrada do programa: Recebe uma frase como "string"
 frase = str(input('Digite uma frase: '))
