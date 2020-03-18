@@ -9,3 +9,5 @@ valor = 7.00
 if velocidade > 80:
     multa=float(velocidade-limite)*valor
     print('\nVocê recebeu uma multa de : R$ {:.2f} pois andou {}Km/h acima da velocidade máxima de 80Km/h.\n'.format(multa,(velocidade-limite)))
+else:
+    print('Você dirigiu dentro do limite de velocidade {} Km'.format(limite))
