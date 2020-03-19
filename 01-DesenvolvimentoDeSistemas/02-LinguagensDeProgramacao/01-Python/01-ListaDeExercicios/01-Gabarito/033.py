@@ -24,7 +24,7 @@ if numero03 > numero01 and numero03 > numero02:
     maior = numero03
 
 ### Testes para verificação do menor número. Se os quatro testes
-### falharem, o menor número será o primeiro, conforme a primeir
+### falharem, o menor número será o primeiro, conforme a primeira
 ### atribuição da variável "menor" supôs.
 if numero02 < numero01 and numero02 < numero03:
     menor = numero02
