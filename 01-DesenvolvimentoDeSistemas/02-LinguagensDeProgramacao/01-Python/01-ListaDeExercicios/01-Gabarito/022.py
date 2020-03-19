@@ -1,6 +1,4 @@
-print("""
-Crie um programa que leia o nome completo de uma pessoa e mostre: a) O nome com todas as letras maiúsculas; b) O nome com todas as letras minúsculas; c) Quantas letras ao todo (sem considerar espaços); d) Quantas letras tem o primeiro nome 
-"""')
+print('[-- Crie um programa que leia o nome completo de uma pessoa e mostre: a) O nome com todas as letras maiúsculas; b) O nome com todas as letras minúsculas; c) Quantas letras ao todo (sem considerar espaços); d) Quantas letras tem o primeiro nome --]\n')
 
 ### Entrada de dados
 nomeCompleto=input('Por favor, informe seu nome completo: ')
