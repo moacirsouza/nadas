@@ -6,8 +6,8 @@ elas podem ou não formar um triângulo.
 print("""
 Este programa recebe o valor de três retas e verifica se, com elas,
 é possível formar um triângulo. Para isso é importante saber que a
-a soma de quaisquer dois lados de um triângulo deve, SEMPRE,
-ser maior que o terceiro lado restante.
+a soma de quaisquer dois lados de um triângulo deve, SEMPRE, ser 
+maior que o terceiro lado restante.
 """)
 
 lado01 = float(input('Digite o valor do lado 01: '))
