@@ -7,8 +7,8 @@ Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do 
 então o empréstimo será negado.
 """)
 
-### Entrada do programa: Recebe o valor da casa e o salário do comprador emem real
-### (número real, "float") e o tempo de pagamento como inteiro ("int").
+### Entrada do programa: Recebe o valor da casa e o salário do comprador como número real
+### ("float") e o tempo de pagamento como inteiro ("int").
 valorDoImovel = float(input('Informe o valor do imóvel: R$ ').strip())
 salarioDoComprador = float(input('Informe o salário do(a) comprador(a): R$ ').strip())
 tempoDePagamento = int(input('Informe o tempo de pagamento (Em anos): ').strip())
@@ -41,4 +41,5 @@ Resumo financeiro:
     parcelaMensal,
     limiteSuperior,
     situacaoDoFinanciamento
-    ))
+    )
+)

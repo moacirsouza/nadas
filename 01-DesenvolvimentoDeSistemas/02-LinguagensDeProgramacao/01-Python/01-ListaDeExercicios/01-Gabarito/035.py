@@ -10,9 +10,9 @@ a soma de quaisquer dois lados de um triângulo deve, SEMPRE, ser
 maior que o terceiro lado restante.
 """)
 
-lado01 = float(input('Digite o valor do lado 01: '))
-lado02 = float(input('Digite o valor do lado 02: '))
-lado03 = float(input('Digite o valor do lado 03: '))
+lado01 = float(input('Digite o valor do lado 01: ').strip())
+lado02 = float(input('Digite o valor do lado 02: ').strip())
+lado03 = float(input('Digite o valor do lado 03: ').strip())
 
 if lado01+lado02 > lado03:
     if lado01+lado03 > lado02:
