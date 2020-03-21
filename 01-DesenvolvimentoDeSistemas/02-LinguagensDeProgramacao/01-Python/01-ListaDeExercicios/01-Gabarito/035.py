@@ -17,6 +17,6 @@ lado03 = float(input('Digite o valor do lado 03: ').strip())
 if lado01+lado02 > lado03:
     if lado01+lado03 > lado02:
         if lado02+lado03 > lado01:
-            print('É triângulo')
+            print('É triângulo.')
 else:
-    print('Não é.')
+    print('Não é triângulo.')
