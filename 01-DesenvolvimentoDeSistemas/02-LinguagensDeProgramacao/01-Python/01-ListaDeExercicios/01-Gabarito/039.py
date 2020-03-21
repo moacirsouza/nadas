@@ -32,7 +32,9 @@ Estamos em {} e você tem, ou terá até o fim do ano, {} ano(s).
 ### cada caso.
 if idadeDoJovem > 18:
     prazo = idadeDoJovem - 18
-    mensagem += 'O prazo para seu alistamento já expirou há {} ano(s).\n'.format(prazo)
+    mensagem += """
+O prazo para seu alistamento já expirou há {} ano(s).
+""".format(prazo)
 elif idadeDoJovem < 18:
     prazo = 18 - idadeDoJovem
     mensagem += 'Ainda falta(m) {} ano(s) para o seu alistamento.\n'.format(prazo)
