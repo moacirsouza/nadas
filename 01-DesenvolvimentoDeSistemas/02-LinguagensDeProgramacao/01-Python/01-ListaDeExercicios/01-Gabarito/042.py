@@ -26,7 +26,6 @@ if lado01+lado02 > lado03:
                 tipoDeTriangulo = 'Isósceles'
             else:
                 tipoDeTriangulo = 'Escaleno'
-            
-            print('É um triângulo {}'.format(tipoDeTriangulo))
+            print('É um triângulo {}.'.format(tipoDeTriangulo))
 else:
     print('Não é triângulo.')

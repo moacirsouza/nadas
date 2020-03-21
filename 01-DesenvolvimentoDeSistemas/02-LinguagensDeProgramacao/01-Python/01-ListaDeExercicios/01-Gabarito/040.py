@@ -1,6 +1,6 @@
 print("""
-040) Crie um programa que leia duas notas de umaluno e calcule sua média, mostrando
-uma mensagemFinal no final, de acordo com a média atingida:
+040) Crie um programa que leia duas notas de um aluno e calcule sua média, mostrando
+uma mensagem no final, de acordo com a média atingida:
 - Média abaixo de 5.0: REPROVADO
 - Média entre 5.0 e 6.9: RECUPERAÇÃO
 - Média 7.0 ou superior: APROVADO
@@ -21,7 +21,7 @@ else:
 mensagemFinal = """
 As notas do(a) aluno(a) foram {} e {}.
 A média do(a) aluno(a) é {:.2f}.
-Ele(a) está {}
+Ele(a) está {}.
 """.format(nota01,
            nota02,
            media,

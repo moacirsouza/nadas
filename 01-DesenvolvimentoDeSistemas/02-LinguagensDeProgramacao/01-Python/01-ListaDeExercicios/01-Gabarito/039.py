@@ -37,7 +37,9 @@ O prazo para seu alistamento já expirou há {} ano(s).
 """.format(prazo)
 elif idadeDoJovem < idadeMinimaParaAlistamento:
     prazo = idadeMinimaParaAlistamento - idadeDoJovem
-    mensagemFinal += 'Ainda falta(m) {} ano(s) para o seu alistamento.\n'.format(prazo)
+    mensagemFinal += """
+Ainda falta(m) {} ano(s) para o seu alistamento.
+""".format(prazo)
 else:
     mensagemFinal += """
 Este é o ano do seu alistamento! Para maiores

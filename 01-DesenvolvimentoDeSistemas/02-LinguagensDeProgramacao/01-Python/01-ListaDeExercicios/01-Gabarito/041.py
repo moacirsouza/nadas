@@ -14,7 +14,7 @@ anoDeNascimento = int(input('Informe o ano de nascimento do(a) atleta: ').strip(
 anoAtual = date.today().year
 idade = anoAtual - anoDeNascimento
 
-if   idade <= 9:
+if idade <= 9:
     categoria = 'MIRIM'
 elif idade <= 14:
     categoria = 'INFANTIL'
