@@ -21,31 +21,31 @@ anoDeNascimento = int(input('Informe o ano em que você nasceu: ').strip())
 anoAtual = date.today().year
 
 idadeDoJovem = anoAtual - anoDeNascimento
-
-mensagem = """
+idadeMinimaParaAlistamento = 18
+mensagemFinal = """
 Estamos em {} e você tem, ou terá até o fim do ano, {} ano(s).
 """.format(anoAtual, idadeDoJovem)
 
 ### O conjunto de testes é bem simples e apenas verifica se o jovem
 ### tem mais, menos ou exatamente 18 anos de idade. De acordo com
-### este critério a variável "mensagem" recebe novas informações para
+### este critério a variável "mensagemFinal" recebe novas informações para
 ### cada caso.
-if idadeDoJovem > 18:
-    prazo = idadeDoJovem - 18
-    mensagem += """
+if idadeDoJovem > idadeMinimaParaAlistamento:
+    prazo = idadeDoJovem - idadeMinimaParaAlistamento
+    mensagemFinal += """
 O prazo para seu alistamento já expirou há {} ano(s).
 """.format(prazo)
-elif idadeDoJovem < 18:
-    prazo = 18 - idadeDoJovem
-    mensagem += 'Ainda falta(m) {} ano(s) para o seu alistamento.\n'.format(prazo)
+elif idadeDoJovem < idadeMinimaParaAlistamento:
+    prazo = idadeMinimaParaAlistamento - idadeDoJovem
+    mensagemFinal += 'Ainda falta(m) {} ano(s) para o seu alistamento.\n'.format(prazo)
 else:
-    mensagem += """
+    mensagemFinal += """
 Este é o ano do seu alistamento! Para maiores
 informações, visite a Junta Militar mais próxima!
 """
 
-### Por fim, apenas a variável "mensagem" é passada como parâmetro
+### Por fim, apenas a variável "mensagemFinal" é passada como parâmetro
 ### para a saída do programa. Todos os dados, cálculos e variações
 ### possíveis, derivadas da regra de negócios, já foram tratadas
 ### anteriormente, por isso não é mais preciso alterar nada pontualmente
-print(mensagem)
+print(mensagemFinal)
