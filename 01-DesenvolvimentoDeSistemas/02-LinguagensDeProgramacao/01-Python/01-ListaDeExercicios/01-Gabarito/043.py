@@ -3,7 +3,7 @@ print("""
 e mostre seu status, de acordo com a tabela abaixo:
 - Abaixo de 18.5: Abaixo do Peso
 - Entre 18.5 e 25: Peso ideal
-- 20 até 30: Sobrepeso
+- 25 até 30: Sobrepeso
 - 30 até 40: Obesidade
 - Acima de 40: Obesidade mórbida
 """)
@@ -20,7 +20,7 @@ if imc < 18.5:
     situacaoDoPaciente = 'abaixo do peso'
 elif 18.5 <= imc < 25:
     situacaoDoPaciente = 'com peso ideal'
-elif 20 <= imc < 30:
+elif 25 <= imc < 30:
     situacaoDoPaciente = 'com sobrepeso'
 elif 30 <= imc <= 40:
     situacaoDoPaciente = 'obeso(a)'
