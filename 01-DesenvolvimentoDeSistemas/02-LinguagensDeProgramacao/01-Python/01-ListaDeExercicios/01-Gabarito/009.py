@@ -1,4 +1,6 @@
-print('[-- Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada. --]\n')
+print("""
+Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada. 
+""")
 numero = int(input('Digite um número inteiro: '))
 titulo = 'Tabuada do ' + str(numero)
 print('+{:-^16}+'.format(titulo))

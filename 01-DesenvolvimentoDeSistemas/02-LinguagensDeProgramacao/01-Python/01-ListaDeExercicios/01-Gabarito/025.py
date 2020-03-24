@@ -1,4 +1,6 @@
-print('[-- Crie um programa que leia o nome de uma pessoa e diga se ela tem "SILVA" no nome. --]\n')
+print("""
+Crie um programa que leia o nome de uma pessoa e diga se ela tem "SILVA" no nome. 
+""")
 
 ### Entrada do programa: Recebe o nome de uma pessoa como "string"
 nome = str(input('Digite seu nome completo: '))

@@ -1,4 +1,6 @@
-print('[-- Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa. --]\n')
+print("""
+Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa. 
+""")
 from math import hypot, sqrt
 catetoOposto = float(input('Informe o valor do cateto oposto do triângulo retângulo: '))
 catetoAdjacente = float(input('Informe o valor do cateto adjacente do triângulo retângulo: '))

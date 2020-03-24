@@ -1,4 +1,6 @@
-print('[-- Faça um programa em Python que abra e reproduza o Áudio de um arquivo MP3. --]\n')
+print("""
+Faça um programa em Python que abra e reproduza o Áudio de um arquivo MP3. 
+""")
 musica = '/home/moacir/Downloads/essaPassou.mp3'
 
 ### Método 1, usando uma biblioteca externa: playsound
