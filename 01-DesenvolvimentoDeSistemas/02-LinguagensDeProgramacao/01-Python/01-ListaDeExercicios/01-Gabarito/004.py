@@ -1,5 +1,5 @@
 print("""
-Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ele. 
+004) Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ele. 
 """)
 entradaDoTeclado=input('Digite algo: ')
 print('O tipo primitivo do conteúdo informado é: {}'.format(type(entradaDoTeclado)))

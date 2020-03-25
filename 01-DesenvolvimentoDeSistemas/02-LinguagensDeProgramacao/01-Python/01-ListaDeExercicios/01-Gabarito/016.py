@@ -1,5 +1,5 @@
 print("""
-Crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção Inteira. Ex: Digite um número: 6.127. O número 6.127 tem a parte inteira 6. 
+016) Crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção Inteira. Ex: Digite um número: 6.127. O número 6.127 tem a parte inteira 6. 
 """)
 ### A função trunc remove a parte inteira de um número real. Não é necessário
 ### importar toda a biblioteca math, apenas a função trunc. Isso economiza

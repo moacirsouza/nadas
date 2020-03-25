@@ -1,5 +1,5 @@
 print("""
-Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada. 
+009) Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada. 
 """)
 numero = int(input('Digite um número inteiro: '))
 titulo = 'Tabuada do ' + str(numero)
