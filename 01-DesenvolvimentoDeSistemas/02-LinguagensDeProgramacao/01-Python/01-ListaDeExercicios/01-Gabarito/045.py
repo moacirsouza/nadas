@@ -17,20 +17,20 @@ escolhaDoComputador = randint(0, 2)
 mensagemFinal = ''
 computadorVenceu = 'O Computador venceu.'
 computadorPerdeu = 'Parabéns, VOCÊ VENCEU!'
-pedraPapelTesoura = ['PEDRA', 'PAPEL', 'TESOURA']
+pedraPapelTesoura = ('PEDRA', 'PAPEL', 'TESOURA')
 opcaoInvalida = False
 
 resultado = computadorPerdeu
 
 if escolhaDoJogador == escolhaDoComputador:
     resultado = 'EMPATOU!'
-elif escolhaDoJogador == 0:
+elif escolhaDoJogador == 0: # O jogador jogou PEDRA
     if escolhaDoComputador == 1:
-        resultado = computadorVenceu 
-elif escolhaDoJogador == 1:
+        resultado = computadorVenceu
+elif escolhaDoJogador == 1: # O jogador jogou PAPEL
     if escolhaDoComputador == 2:
         resultado = computadorVenceu
-elif escolhaDoJogador == 2:
+elif escolhaDoJogador == 2: # O jogador jogou TESOURA
     if escolhaDoComputador == 0:
         resultado = computadorVenceu
 else:
