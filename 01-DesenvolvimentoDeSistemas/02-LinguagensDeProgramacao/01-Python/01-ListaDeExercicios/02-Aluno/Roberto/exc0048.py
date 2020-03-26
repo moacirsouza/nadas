@@ -7,8 +7,9 @@ somaimpares = 0
 for numerosimpares in range (1, 501, 2):
   if numerosimpares % 3 == 0:
     somaimpares += numerosimpares
-print('A soma dos ímpares múltiplos de três de 1 até 500 é {}'.format(somaimpares), end=' ')
+print('A soma dos ímpares múltiplos de três de 1 até 500 é {}'.format(somaimpares))
   
+
 
 
 
