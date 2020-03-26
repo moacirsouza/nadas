@@ -16,7 +16,7 @@ if imc < 18.5:
   print('Você está abaixo do peso')
 elif 18.5 <= imc < 25: 
   print('Parabéns, você está no peso IDEAL')
-elif 25 <= imc <=30:
+elif 25 <= imc < 30:
   print('Você está com Sobrepeso')
 elif 30 <= imc <= 40:
   print('Você está com Obesidade')
