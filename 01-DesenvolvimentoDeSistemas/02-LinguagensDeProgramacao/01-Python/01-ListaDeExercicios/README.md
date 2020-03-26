@@ -3,7 +3,7 @@
 Há duas listas principais de Exercícios que serão resolvidas no projeto:
 
 1. [A Lista de professora Flávia](https://fit.faccat.br/~fpereira/apostilas/exerc_resp_alg_mar2[007](01-Gabarito/007.py).pdf), também usada no módulo de [Linguagens de Programação](/01-LogicaDeProgramacao/Exercicios/).
-2. [A Lista de Exercícios do Curso em Vídeo](https://www.youtube.com/playlist?list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-), do [Gustavo Guanabara](https://www.youtube.com/user/cursosemvideo).
+2. [A Lista de Exercícios do Curso em Vídeo](https://www.youtube.com/playlist?list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-), do [Gustavo Guanabara](https://www.youtube.com/user/cursosemvideo):
    - [x] [001](01-Gabarito/001.py)) Crie um programa que escreva "Olá, mundo!" na tela.
    - [x] [002](01-Gabarito/002.py)) Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas.
    - [x] [003](01-Gabarito/003.py)) Crie um programa que leia dois números e mostre a soma entre eles.
@@ -39,3 +39,43 @@ Há duas listas principais de Exercícios que serão resolvidas no projeto:
    - [x] [034](01-Gabarito/034.py)) Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento. Para salários superiores a R$1.250,00, calcule um aumento de 10%. Para os inferiores ou iguais, o aumento é de 15%.
    - [x] [035](01-Gabarito/035.py)) Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo.
    - [x] [036](01-Gabarito/036.py)) Escreva um programa para aprovar um empréstimo bancário para a compra de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar. Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do salário ou então o empréstimo será negado.
+   - [x] [037](01-Gabarito/037.py)) Escreva um programa que leia um número inteiro qualquer e peça ao usuário para escolher qual será a base de conversão:
+      - 1 para binário
+      - 2 para octal
+      - 3 para hexadecimal
+   - [x] [038](01-Gabarito/038.py)) Escreva um programa que leia dois números inteiros e compare-os, mostrando na tela uma mensagem:
+      - O primeiro valor é maior
+      - O segundo valor é maior
+      - Não existe valor maior, os dois são iguais
+   - [x] [039](01-Gabarito/039.py)) Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo com a sua idade, se ele ainda vai se alistar ao serviço, se é a hora de se alistar ou se já passou do tempo do alistamento. Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
+   - [x] [040](01-Gabarito/040.py)) Crie um programa que leia duas notas de um aluno e calcule sua média, mostrando uma mensagem no final, de acordo com a média atingida:
+      - Média abaixo de 5.0: REPROVADO
+      - Média entre 5.0 e 6.9: RECUPERAÇÃO
+      - Média 7.0 ou superior: APROVADO
+   - [x] [041](01-Gabarito/041.py)) A Confederação Nacional de Natação precisa de um programa que leia o ano de nascimento de um atleta e mostre a sua categoria, de acordo com a idade:
+      - Até 9 anos: MIRIM
+      - Até 14 anos: INFANTIL
+      - Até 19 anos: JÚNIOR
+      - Até 25 anos: SÊNIOR
+      - Acima: MASTER
+   - [x] [042](01-Gabarito/042.py)) Refaça o DESAFIO 035 dois triângulos, acrescentando o recurso de mostrar que tipo de triângulo será formado:
+      - Equilátero: todos os lados iguais
+      - Isósceles: dois lados iguais
+      - Escaleno: todos os lados diferentes
+   - [x] [043](01-Gabarito/043.py)) Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC e mostre seu status, de acordo com a tabela abaixo:
+      - Abaixo de 18.5: Abaixo do Peso
+      - Entre 18.5 e 25: Peso ideal
+      - 25 até 30: Sobrepeso
+      - 30 até 40: Obesidade
+      - Acima de 40: Obesidade mórbida
+   - [x] [044](01-Gabarito/044.py)) Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e condição de pagamento:
+      - À vista dinheiro/cheque: 10% de desconto
+      - À vista no cartão: 5% de desconto
+      - Em até 2x no cartão: Preço normal
+      - 3x ou mais no cartão: 20% de juros
+   - [x] [045](01-Gabarito/045.py)) Crie um programa que faça o computador jogar Jokenpô com você.
+   - [x] [046](01-Gabarito/046.py)) Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício, indo de 10 até 0, com pausa de 1 segundo entre eles.
+   - [x] [047](01-Gabarito/047.py)) Crie um programa que mostre na tela todos os números pares que estão no intervalo entre 1 e 50.
+   - [x] [048](01-Gabarito/048.py)) Faça um programa que calcule a soma entre todos os números ímpares que são múltiplos de três e que se encontram no intervalo de 1 até 500.
+   - [x] [049](01-Gabarito/049.py)) refaça o DESAFIO 009, mostrando a tabuada de um número que o usuário escolher, só que agora utilizando um laço for.
+   - [x] [050](01-Gabarito/050.py)) Desenvolva um programa que leia seis números inteiros e mostre a soma apenas daqueles que forem pares. Se o valor digitado for ímpar, desconsidere-o 
