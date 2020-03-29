@@ -8,7 +8,7 @@ sexo = input('Informe o sexo da pessoa (m/f): ').strip().lower()
 while sexo != 'm' and sexo != 'f':
     sexo = input("""
 Opção inválida.
-Use "m" ou "f" para registrar o sexo da pessoa (m/f): """).strip().lower()
+Use "m" ou "f" para registrar o sexo da pessoa: """).strip().lower()
 
 sexoRegistrado = 'Masculino'
 
