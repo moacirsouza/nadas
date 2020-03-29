@@ -32,7 +32,7 @@ mediaDasIdades = somaDasIdades/4
 print("""
 Média das idades: {}.
 O nome do Homem mais velho é: {}.
-Quantidade de mulheres com menos de 20 anos: {}""".format(mediaDasIdades,
-                                                          nomeDoHomemMaisVelho,
-                                                          quantidadeDeMulheresComMenosDeVinteAnos))
+Quantidade de mulheres com menos de 20 anos: {}.""".format(mediaDasIdades,
+                                                           nomeDoHomemMaisVelho,
+                                                           quantidadeDeMulheresComMenosDeVinteAnos))
     
