@@ -6,8 +6,8 @@ quantos palpites foram necessários para vencer.
 
 from random import randint
 
-numero = int(input('Digite um número entre 0 e 10: '))
-senha = randint(0,10)
+numero = int(input('Digite um número entre 0 e 10: ').strip())
+senha = randint(0, 10)
 
 ### O contador começa com um por causa da primeira solicitação, feita fora do laço.
 contador = 1
