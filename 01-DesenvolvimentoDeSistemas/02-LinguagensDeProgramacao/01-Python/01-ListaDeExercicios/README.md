@@ -79,3 +79,14 @@ Há duas listas principais de Exercícios que serão resolvidas no projeto:
    - [x] [048](01-Gabarito/048.py)) Faça um programa que calcule a soma entre todos os números ímpares que são múltiplos de três e que se encontram no intervalo de 1 até 500.
    - [x] [049](01-Gabarito/049.py)) refaça o DESAFIO 009, mostrando a tabuada de um número que o usuário escolher, só que agora utilizando um laço for.
    - [x] [050](01-Gabarito/050.py)) Desenvolva um programa que leia seis números inteiros e mostre a soma apenas daqueles que forem pares. Se o valor digitado for ímpar, desconsidere-o 
+   - [x] [051](01-Gabarito/051.py)) Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, mostre os 10 primeiros termos dessa progressão.
+   - [x] [052](01-Gabarito/052.py)) Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
+   - [x] [053](01-Gabarito/053.py)) Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, desconsiderando os espaços.
+   - [x] [054](01-Gabarito/054.py)) Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
+   - [x] [055](01-Gabarito/055.py)) Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o maior e o menor peso lidos.
+   - [x] [056](01-Gabarito/056.py)) Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do programa, mostre:
+      - A média de idade do grupo.
+      - Qual é o nome do homem mais velho.
+      - Quantas mulheres tem menos de 20 anos.
+   - [x] [057](01-Gabarito/057.py)) Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'. Caso esteja errado, peça a digitação novamente até ter um valor correto
+   - [x] [058](01-Gabarito/058.py)) Melhore o jogo do DESAFIO 028 onde o computador vai "pensar" em um número entre 0 e 10. Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos palpites foram necessários para vencer.
