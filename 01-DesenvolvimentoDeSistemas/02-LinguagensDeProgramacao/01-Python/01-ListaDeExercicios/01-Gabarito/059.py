@@ -34,18 +34,18 @@ for opcao in range(len(listaDeOpcoes)):
     menu += """
 [{}] {}""".format(opcao+1, listaDeOpcoes[opcao])
 
-escolhaDoUsuario = 0
-saida = False
-
 menu += """
 Escolha: """
+
+escolhaDoUsuario = 0
+saida = False
 
 while escolhaDoUsuario != len(listaDeOpcoes):
     escolhaDoUsuario = int(input(menu))
 
-    if len(listaDeOpcoes) < escolhaDoUsuario < 0:
-        mensagemFinal = 'Opção inválida. Tente novamente'
-        saida = True
+    # if escolhaDoUsuario > len(listaDeOpcoes) or escolhaDoUsuario <= 0:
+    #     print('Opção inválida. Tente novamente')
+    #     continue
     
     if listaDeOpcoes[escolhaDoUsuario-1] == 'somar':
         resultado = numero01 + numero02
@@ -58,11 +58,12 @@ while escolhaDoUsuario != len(listaDeOpcoes):
         if numero02 > numero01:
             maior = numero02
         resultado = maior
+
     if listaDeOpcoes[escolhaDoUsuario-1] == 'novos números':
         numero01 = float(input('Digite o primeiro número: ').strip())
         numero02 = float(input('Digite o segundo número: ').strip())
-
         resultado = 'Os novo números são: {} e {}.'.format(numero01, numero02)
+
     if listaDeOpcoes[escolhaDoUsuario-1] == 'sair do programa':
         mensagemFinal = 'Obrigado por jogar. Volte sempre.'
         saida = True
