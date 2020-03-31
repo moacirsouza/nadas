@@ -1,4 +1,4 @@
-# Entendi nada, Moka.
+# Entendi nada, Moka.:wq
 
 var = input("Digite algo, amiguinho\t: ")
 
