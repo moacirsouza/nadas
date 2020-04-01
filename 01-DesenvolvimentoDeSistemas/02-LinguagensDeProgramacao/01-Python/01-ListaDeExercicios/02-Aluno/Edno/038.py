@@ -13,4 +13,4 @@ elif numero1 < numero2:
 else:
     print('{} é igual a {}'.format(numero1, numero2))
 
-
+print('.')
