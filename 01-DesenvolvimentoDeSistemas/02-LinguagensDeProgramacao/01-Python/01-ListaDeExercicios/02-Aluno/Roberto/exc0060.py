@@ -3,10 +3,10 @@ print("""
 e mostre o seu fatorial.
 """)
 
-# from math import factorial
-# n = int(input('Digite um número para calcular seu Fatorial: '))
-# f = factorial(n)
-# print('O fatorial de {} é {}'.format(n, f))
+from math import factorial
+n = int(input('Digite um número para calcular seu Fatorial: '))
+f = factorial(n)
+print('O fatorial de {} é {}'.format(n, f))
 
 ### Outro método, sem uso do módulo math !!
 
