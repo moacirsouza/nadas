@@ -9,3 +9,5 @@ if pow(hipotenusa,2) == (pow(cateto_a,2)+pow(cateto_o,2)):
     print('Dá pra ser triângulo.')
 else:
     print('Não dá pra ser triângulo.')
+
+# Viajei. Não sabia que era assim que se calculava pra saber se dava pra fazer um triângulo.
