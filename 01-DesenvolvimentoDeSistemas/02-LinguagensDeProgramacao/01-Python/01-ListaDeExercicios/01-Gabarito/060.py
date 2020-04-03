@@ -10,16 +10,16 @@ esqueletoDoFatorial = ''
 
 while contador >= 1:
     fatorial *= contador
-    esqueletoDoFatorial += '{} x '.format(contador, end='')
-    contador -=1
+    esqueletoDoFatorial += '{}x'.format(contador)
+    contador -= 1
 
 ### A variável "esqueletoDoFatorial" foi passada com o fatiamento
-### [:-3] a fim de remover o último "x", inserido quando ela foi
+### [:-1] a fim de remover o último "x", inserido quando ela foi
 ### criada.
 mensagemFinal = """
 O fatorial é: {}! = {} = {}
 """.format(numero,
-           esqueletoDoFatorial[:-3],
+           esqueletoDoFatorial[:-1],
            fatorial)
 
 print(mensagemFinal)
