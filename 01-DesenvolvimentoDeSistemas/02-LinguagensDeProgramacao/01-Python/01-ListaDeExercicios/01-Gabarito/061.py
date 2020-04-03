@@ -11,11 +11,11 @@ contador = 0
 termosDaPA = ''
 
 while contador < 10:
-    contador += 1
-    termosDaPA += '{}, '.format(termo, end='')
+    termosDaPA += '{},'.format(termo)
     termo += razao
+    contador += 1
 
 mensagemFinal = """
-Os termos da PA são: {}""".format(termosDaPA[:-2])
+Os 10 primeiros termos da PA são: {}""".format(termosDaPA[:-1])
 
 print(mensagemFinal)
