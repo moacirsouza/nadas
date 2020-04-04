@@ -13,7 +13,7 @@ numero = int(input('Digite o número: '))
 while numero != 999:
     numerosdigitados += 1
     somadosnumeros += numero
-    
+    numero = int(input('Digite o número: '))
 
 print('A quantidade de números digitados foi {}'.format(numerosdigitados))
 print('A soma dos números digitados foi {}'.format(somadosnumeros))
