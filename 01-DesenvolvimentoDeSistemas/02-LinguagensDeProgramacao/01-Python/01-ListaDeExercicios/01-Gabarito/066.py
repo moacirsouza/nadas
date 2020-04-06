@@ -18,4 +18,4 @@ while True:
 
 print("""
 {} números foram mostrados.
-A soma deles é {}""".format(contador, soma))
+A soma deles é {},""".format(contador, soma))
