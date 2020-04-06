@@ -8,8 +8,8 @@ razao = int(input('Informe a razão da PA: ').strip())
 
 termo = primeiroTermo
 contador = 0
-quantidadeDeTemosDaPA = 10
 termosDaPA = ''
+quantidadeDeTemosDaPA = 10
 condicaoDeSaida = 1
 
 while condicaoDeSaida != 0:
