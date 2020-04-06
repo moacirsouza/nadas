@@ -7,9 +7,14 @@ quantos números foram digitados e qual foi a soma entre eles (desconsiderando o
 condicaoDeParada = 0
 soma = 0
 contador = 0
+flag = 999
 
-while condicaoDeParada != 999:
-    condicaoDeParada = int(input('Informe um número inteiro: ').strip())
+while condicaoDeParada != flag:
+    condicaoDeParada = int(input('Informe um número inteiro (999 para sair): ').strip())
     soma += condicaoDeParada
     contador += 1
-print(soma-999, contador-1)
+
+print("""
+Você informou {} número(s).
+O somatório dele(s) é: {}
+""".format(contador-1, soma-flag))
