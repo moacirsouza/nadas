@@ -12,7 +12,7 @@ Digite um número negativo para sair: """).strip())
     if numero < 0:
         break
 
-    ### Extração ipsis literis do Exercício 049,
+    ### Extração ipsis litteris do Exercício 049,
     ### que já imprime a tabuada de qualquer
     ### número
     titulo = 'Tabuada do ' + str(numero)
@@ -20,8 +20,8 @@ Digite um número negativo para sair: """).strip())
     print('\n+{:-^16}+'.format(titulo))
     for fatorMultiplicador in range(1, 11):
         print('| {:>2} x {:>2} = {:>4} |'.format(numero,
-                                                fatorMultiplicador,
-                                                numero*fatorMultiplicador))
+                                                 fatorMultiplicador,
+                                                 numero*fatorMultiplicador))
     print('+'+('-'*16)+'+')
 
 print('Fim')
