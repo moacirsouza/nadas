@@ -90,3 +90,18 @@ Há duas listas principais de Exercícios que serão resolvidas no projeto:
       - Quantas mulheres tem menos de 20 anos.
    - [x] [057](01-Gabarito/057.py)) Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'. Caso esteja errado, peça a digitação novamente até ter um valor correto
    - [x] [058](01-Gabarito/058.py)) Melhore o jogo do DESAFIO 028 onde o computador vai "pensar" em um número entre 0 e 10. Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos palpites foram necessários para vencer.
+   - [x] [059](01-Gabarito/059.py)) Crie um programa que leia dois valores e mostre um menu com o o ao lado na tela. Seu programa deverá realizar a operação solicitada em cada caso.
+      - \[1\] somar
+      - \[2\] multiplicar
+      - \[3\] maior
+      - \[4\] novos números
+      - \[5\] sair do programa
+   - [x] [060](01-Gabarito/060.py)) Faça um programa que leia um número qualquer e mostre o seu fatorial. Ex: 5!=5x4x3x2x1=120
+   - [x] [061](01-Gabarito/061.py)) Refaça o DESAFIO 051, lendo o primeiro termo e a razão de uma PA, mostrando os 10 primeiros termos da progressão usando a estrutura while.
+   - [x] [062](01-Gabarito/062.py)) Melhore o DESAFIO 061, perguntando para o usuário se ele quer mostrar mais alguns termos. O programa encerra quando ele disser que quer mostrar 0 termos.
+   - [x] [063](01-Gabarito/063.py)) Escreva um programa que leia um número n inteiro qualquer e mostre na tela os n primeiros elementos de uma Sequência de Fibonacci. Ex: 0 → 1 → 1 → 2 → 3 → 5 → 8 
+   - [x] [064](01-Gabarito/064.py)) Crie um programa que leia vários números inteiros pelo teclado. O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag).
+   - [x] [065](01-Gabarito/065.py)) Crie um programa que leia vários números inteiros pelo teclado. No final da execução mostre a média entre todos os valores e qual foi o maior e o menor valores lidos. O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores.
+   - [x] [066](01-Gabarito/066.py)) Crie um programa que leia vários números inteiros pelo teclado. O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag).
+   - [x] [067](01-Gabarito/067.py)) Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado pelo usuário. O programa será interrompido quando o número solicitado for negativo.
+   - [x] [068](01-Gabarito/068.py)) Faça um programa que jogue par ou ímpar com o computador. O jogo só será interrompido quando o jogador PERDER, mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
