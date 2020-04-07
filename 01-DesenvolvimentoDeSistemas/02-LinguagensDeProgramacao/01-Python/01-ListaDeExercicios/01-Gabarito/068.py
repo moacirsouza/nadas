@@ -7,41 +7,45 @@ final do jogo.
 from random import randint
 
 numeroDoComputador = randint(0, 5)
-# escolhaDoComputador = randint(0,1)
-# parOuImpar = ('PAR', 'ÍMPAR')
-contador = 0
-soma = 0
+contador = soma = 0
 perdeu = 'Você perdeu!'
 venceu = 'Você venceu!'
 
-while True:
-    numeroDoJogador = int(input('Escolha um número entre 0 e 5: ').strip())
+while True: # WHILE 1: Coleta o número usuário
+    numeroDoJogador = input('Escolha um número entre 0 e 5: ').strip()
 
-    # if numeroDoJogador < 0 or numeroDoJogador > 5:
-    #     continue
-    # else:
-    #     break
+    if not numeroDoJogador.isnumeric():
+        continue
+    else:
+        numeroDoJogador = int(numeroDoJogador)
 
-    while True:
-        jogada = str(input('Par ou ímpar? [p/i]: ').strip().lower())
-
-        soma = numeroDoComputador + numeroDoJogador
-
-        if soma%2 == 0:
-            if jogada == 'p':
-                resultado = venceu
-            else:
-                resultado = perdeu
+        if numeroDoJogador < 0 or numeroDoJogador > 5:
+            continue
         else:
-            if jogada == 'i':
-                resultado = perdeu
-            else:
-                resultado = venceu
-        print(resultado)
-        break
+            while True: # WHILE 2: Coleta a escolha do usuário (par ou ímpar)
+                jogada = str(input('Par ou ímpar? [p/i]: ').strip().lower())
+
+                if jogada != 'p' and jogada != 'i':
+                    continue
+                else:
+                    soma = numeroDoComputador + numeroDoJogador
+
+                    if soma%2 == 0:
+                        if jogada == 'p':
+                            resultado = venceu
+                        else:
+                            resultado = perdeu
+                    else:
+                        if jogada == 'i':
+                            resultado = venceu
+                        else:
+                            resultado = perdeu
+                    print(resultado)
+                    break # SAIDA do WHILE 2
     
     if resultado == venceu:
         contador += 1
     else:
-        break
+        break # Saída do WHILE 1
+
 print('Você venceu {} vez(es).'.format(contador))
