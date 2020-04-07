@@ -7,22 +7,41 @@ final do jogo.
 from random import randint
 
 numeroDoComputador = randint(0, 5)
-escolhaDoComputador = randint(0,1)
-parOuImpar = ('PAR', 'ÍMPAR')
+# escolhaDoComputador = randint(0,1)
+# parOuImpar = ('PAR', 'ÍMPAR')
 contador = 0
+soma = 0
+perdeu = 'Você perdeu!'
+venceu = 'Você venceu!'
 
 while True:
-    while True:
-        numeroDoJogador = int(input('Escolha um número entre 0 e 5: ').strip())
+    numeroDoJogador = int(input('Escolha um número entre 0 e 5: ').strip())
 
-        if numeroDoJogador < 0 or numeroDoJogador > 5:
-            continue
+    # if numeroDoJogador < 0 or numeroDoJogador > 5:
+    #     continue
+    # else:
+    #     break
+
+    while True:
+        jogada = str(input('Par ou ímpar? [p/i]: ').strip().lower())
+
+        soma = numeroDoComputador + numeroDoJogador
+
+        if soma%2 == 0:
+            if jogada == 'p':
+                resultado = venceu
+            else:
+                resultado = perdeu
         else:
-            break
-
-    while True:
-        jogada = str(input('Par ou ímpar? [P/I]').strip())
-
-        if jog
-
-    break
+            if jogada == 'i':
+                resultado = perdeu
+            else:
+                resultado = venceu
+        print(resultado)
+        break
+    
+    if resultado == venceu:
+        contador += 1
+    else:
+        break
+print('Você venceu {} vez(es).'.format(contador))
