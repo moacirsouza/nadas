@@ -7,7 +7,6 @@ B) Quantos homens foram cadastrados.
 C) Quantas mulheres tem menos de 20 anos.
 """)
 
-contador = 0
 totalDeHomensCadastrados = 0
 totalDePessoasComMaisDeDezoitoAnos = 0
 totalDeMulheresComMenosDeVinteAnos = 0
