@@ -23,7 +23,7 @@ while True:
     if sexo == 'F' and idade < 20:
         mulherescommenosde20 += 1
     continuar = ' '
-    while continuar not in 'SN': # Permanece solicitando se o usuário não digar S ou N.
+    while continuar not in 'SN': # Permanece solicitando se o usuário não digitar S ou N.
         continuar = str(input('Quer continuar (S/N)?')).strip().upper()[0]
     if continuar == 'N':
         break
