@@ -20,7 +20,7 @@ while True:
 
         if condicaoDeParada == 's' or condicaoDeParada == 'n':
             break
-        print('Use "S/s" ou "N/n", respectivamente, para contiunar ou sair do programa')
+        print('Use "S/s" ou "N/n", respectivamente, para contiunar ou sair do programa.')
 
     ### Avaliação do produto mais barato
     if contador == 0:
@@ -34,7 +34,7 @@ while True:
     ### Totalizador de Gastos
     totalGastoNaCompra += precoDoProduto
 
-    if precoDoProduto >= 1000:
+    if precoDoProduto > 1000:
         produtosMaisCarosQue1000 += 1
 
     if condicaoDeParada == 'n':

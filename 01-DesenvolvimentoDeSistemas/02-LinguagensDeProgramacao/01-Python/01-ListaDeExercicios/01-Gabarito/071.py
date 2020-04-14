@@ -5,8 +5,7 @@ informar quantas cédulas de cada valor serão entregues.
 OBS: Considere que o Caixa possui cédulas de R$ 50, R$ 20, R$ 10 e R$ 1.
 """)
 
-### Solução 0: Funcional, mas xcessivamente complicada. Apoia-se exclusivamente
-### nos cálculos 
+### Solução 0: Funcional, mas excessivamente complicada.
 # valorDoSaque = []
 # valorDoSaque.extend(input('Quanto quer sacar? ').strip()) # Mantido como "string" para aproveitar a propriedade de iterável do objeto
 # multiplicador = 1
@@ -50,7 +49,6 @@ OBS: Considere que o Caixa possui cédulas de R$ 50, R$ 20, R$ 10 e R$ 1.
 
 ### Solução 1: Mais simples que a Solução 0, mas muito deselegante. Usa quatro
 ### contadores, cria muita repetição de código. Um desastre :)
-
 # valorDoSaque = int(input('Quanto quer sacar? '))
 # contador50 = contador20 = contador10 = contador1 = 0
 # resultado = ''
@@ -87,9 +85,7 @@ OBS: Considere que o Caixa possui cédulas de R$ 50, R$ 20, R$ 10 e R$ 1.
 valorDoSaque = int(input('Quanto quer sacar? R$ '))
 cedula = 50
 contador = 0
-saida = ''
 while True:
-    # print(f'[DEBUG] - Valor da cédula depois do ELSE {cedula} ')
     ### [1] O teste só falha quando o valor do saque for menor que o valor da
     ### cédula que está sendo usada na iteração atual. Ou seja, quando a
     ### subtração der resultado negativo, significa que é preciso "trocar" para
@@ -99,7 +95,6 @@ while True:
         contador += 1
         valorDoSaque -= cedula
     else:
-        # print('[DEBUG] - Entrei no ELSE')
         ### [3] A variável "contador" indica a quantidade de cédulas de cada
         ### valor a cada iteração. Se este valor for 0, significa que não houve
         ### contabilização daquela cédula para compor o saque. Como não é
@@ -107,6 +102,10 @@ while True:
         ### entregues, só realizamos esta ação, caso contador > 0
         if contador > 0:
             print(f'{contador} cédula(s) de {cedula}')
+
+        ### Apenas quando "valorDoSaque" for zero, a operação termina.
+        if valorDoSaque == 0:
+            break
 
         ### [2] Como elucidado no comentário [1], uma vez que o "else" foi
         ### alcançado, é preciso alterar o valor da cédula para aquele
@@ -125,6 +124,3 @@ while True:
         ### caso contrário, ele acumulará o total do grupo anterior de cédulas
         ### ao grupo da iteração atual
         contador = 0
-
-        if valorDoSaque == 0:
-            break

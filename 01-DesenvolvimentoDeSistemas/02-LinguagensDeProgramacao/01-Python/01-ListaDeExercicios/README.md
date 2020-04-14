@@ -105,3 +105,19 @@ Há duas listas principais de Exercícios que serão resolvidas no projeto:
    - [x] [066](01-Gabarito/066.py)) Crie um programa que leia vários números inteiros pelo teclado. O programa só vai parar quando o usuário digitar o valor 999, que é a condição de parada. No final mostre quantos números foram digitados e qual foi a soma entre eles (desconsiderando o flag).
    - [x] [067](01-Gabarito/067.py)) Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado pelo usuário. O programa será interrompido quando o número solicitado for negativo.
    - [x] [068](01-Gabarito/068.py)) Faça um programa que jogue par ou ímpar com o computador. O jogo só será interrompido quando o jogador PERDER, mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
+   - [x] [069](01-Gabarito/069.py)) Crie um programa que leia a idade e o sexo de várias pessoas. A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar. No final, mostre:
+     - A) Quantas pessoas tem mais de 18 anos.
+     - B) Quantos homens foram cadastrados.
+     - C) Quantas mulheres tem menos de 20 anos.
+   - [x] [070](01-Gabarito/070.py)) Crie um programa que leia o nome e o preço de vários produtos. O programa deverá perguntar se o usuário vai continuar. No final, mostre:
+     - A) Qual é o total gasto da compra.
+     - B) Quantos produtos custam mais de R$1000.
+     - C) Qual é o nome do produto mais barato.
+   - [x] [071](01-Gabarito/071.py)) Crie um programa que simule o funcionamento de um caixa eletrônico. No início, pergunte ao usuário qual será o valor a ser sacado (Número inteiro) e o programa vai informar quantas cédulas de cada valor serão entregues.
+     - OBS: Considere que o Caixa possui cédulas de R$ 50, R$ 20, R$ 10 e R$ 1.
+   - [x] [072](01-Gabarito/072.py)) Crie um programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, de zero até vinte. Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostrá-lo por extenso.
+   - [x] [073](01-Gabarito/073.py)) Crie uma tupla preenchida com os 20 primeiros colocados da Tabela do Campeonato Brasileiro de Futebol, na ordem de colocação. Depois mostre:
+     - A) Apenas os 5 primeiros colocados.
+     - B) Os últimos 4 colocados da tabela.
+     - C) Uma lista com os times em ordem alfabética.
+     - D) Em que posição da tabela está o time Chapecoense.
