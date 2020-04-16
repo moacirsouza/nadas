@@ -14,7 +14,7 @@ tabela2018 = ('Palmeiras', 'Flamengo', 'Internacional', 'Grêmio',
               'America Fc', 'Sport', 'Vitória', 'Paraná')
 
 print(f'Lista completa, ordenada, dos 20 colocados do Campeonato Brasileiro de 2018: {tabela2018}\n')
-print(f'A) Os cinco primeiros colocados foram: {tabela2018[0:5]}')
+print(f'A) Os cinco primeiros colocados foram: {tabela2018[:5]}')
 print(f'B) Os quatro últimos colocados foram: {tabela2018[-4:]}')
 print(f'C) Lista dos times em ordem alfabética: {sorted(tabela2018)}')
 print(f'D) O Chapecoense está em {tabela2018.index("Chapecoense")+1}º lugar.')
