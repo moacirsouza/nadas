@@ -11,6 +11,6 @@ listaDePalavras = ('mongoloide', 'egregios', 'assincrona', 'mitigar',
 for palavra in listaDePalavras:
     print(f'\nAs vogais da palavra {palavra.upper()}, são: ', end='')
     for letra in palavra:
-        if letra in '[aeiou]':
+        if letra in 'aeiou':
             print(letra, end=' ')
 print('')
