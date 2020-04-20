@@ -49,7 +49,7 @@ for item in tuplaComQuatroNumeros:
         essesSaoPares += str(item) + ', '
 
 ### Em Python, uma "string" vazia, quando convertida para "Boolean", mesmo
-### implicitamente, como neste caso, retorna o valor False. Como a variável
+### implicitamente, como neste caso, retorna o valor "False". Como a variável
 ### "essesSaoPares" foi iniciada como vazia, se ela não recebeu nenhum valor
 ### durante a verificação do laço, significa que ela permanece vazia e assim,
 ### não existem números pares na tupla.
@@ -63,7 +63,7 @@ posicaoDoPrimeiroTres = 'Não há números 3 nessa lista.'
 if 3 in tuplaComQuatroNumeros:
     ### A fim de evitar ultrapassar a coluna 80, a inicialização da variável
     ### "posicaoDoPrimeiroTres" empregou o uso da a barra invertida como quebra
-    ### de linha
+    ### de linha.
     posicaoDoPrimeiroTres = 'O primeiro número "3" aparece na posição: ' + \
                             str(tuplaComQuatroNumeros.index(3)+1)
 
