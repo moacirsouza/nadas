@@ -24,7 +24,7 @@ while True:
         print('Digite S/s para continuar ou N/n para sair.')
 
     if continuar == 'n':
+        listaDeNumeros.sort()
         break
 
-listaDeNumeros.sort()
 print(f'\nSua lista de números foi: {listaDeNumeros}')

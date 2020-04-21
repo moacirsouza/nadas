@@ -6,7 +6,8 @@ mostre qual foi o maior e o menor valor digitado e suas respectivas posições n
 listaComCincoValores = []
 
 for numero in range(1, 6):
-    listaComCincoValores += [int(input(f'Informe o {numero}º número: '))]
+    entrada = int(input(f'Informe o {numero}º número (Posição {numero-1}): '))
+    listaComCincoValores += [entrada]
 
 maiorNumero = max(listaComCincoValores)
 menorNumero = min(listaComCincoValores)
