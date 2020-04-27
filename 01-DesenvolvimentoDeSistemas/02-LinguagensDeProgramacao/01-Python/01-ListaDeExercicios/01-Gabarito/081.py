@@ -21,11 +21,12 @@ while True:
 
     if querContinuar == 'n':
         listaDeNumeros.sort(reverse=True)
-
-        cincoEstaNaLista = 'O número 5 NÃO está na lista.'
+        nao = ' '
         
-        if 5 in listaDeNumeros:
-            cincoEstaNaLista = 'O número 5 está na lista.'
+        if 5 not in listaDeNumeros:
+            nao = ' não '
+
+        cincoEstaNaLista = f'O número 5{nao}está na lista.'
         break
 
 print(f'A quantidade de números digitados foi {len(listaDeNumeros)}')
