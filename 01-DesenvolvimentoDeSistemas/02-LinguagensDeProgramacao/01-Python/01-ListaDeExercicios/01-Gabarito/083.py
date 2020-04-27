@@ -12,7 +12,7 @@ for i in entrada:
     parentesesAbertos = entrada.count('(')
     parentesesFechados = entrada.count(')')
     if parentesesAbertos != parentesesFechados:
-        print('errado')
+        print('Parenteses sem casamento')
         break
     else:
         if parentesesAbertos == 0 and parentesesFechados == 0:
@@ -33,5 +33,5 @@ for i in entrada:
                 print(entrada)
             else:
                 print(entrada)
-                print('errado')
+                print('Parenteses fora de ordem')
                 break
