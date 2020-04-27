@@ -4,6 +4,7 @@ em uma lista, já na posição correta de inserção (sem usar o sort()). No fin
 lista ordenada na tela.
 """)
 
+### TODO: Reavaliar a lógica e eventualmente refazer tudo
 listaComCincoNumeros = []
 maior = menor = 0
 
