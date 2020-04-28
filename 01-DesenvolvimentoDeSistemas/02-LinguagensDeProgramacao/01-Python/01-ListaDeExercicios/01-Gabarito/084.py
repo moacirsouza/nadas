@@ -2,7 +2,7 @@ print("""
 084) Faça um programa que leia nome e peso de várias pessoas, guardando tudo em uma
 lista. No final, mostre:
 A) Quantas pessoas foram cadastradas.
-B) Uma listagem com as pessoas maie pesadas.
+B) Uma listagem com as pessoas mais pesadas.
 C) Uma listagem com as pessoas mais leves.
 """)
 
@@ -26,6 +26,7 @@ while True:
 
     ### Esta atribuição garante que o nome e o peso serão inseridos,
     ### sempre, como uma lista aninhada na lista principal.
+    ### É boa prática, no entanto, preferir o uso do método "append()".
     listaDePessoasEPesos += [[nome, peso]]
 
     ### Verificação tradicional de continuidade do programa
@@ -46,5 +47,5 @@ for item in listaDePessoasEPesos:
         pessoasMaisLeves += item[0] + ', '
 
 print(f'{len(listaDePessoasEPesos)} pessoas foram cadastradas.')
-print(f'O maior peso encontrado foi {maiorPeso}. As pessoas deste grupo são: {pessoasMaisPesadas[:-2]}')
-print(f'O menor peso encontrado foi {menorPeso}. As pessoas deste grupo são: {pessoasMaisLeves[:-2]}')
+print(f'O maior peso encontrado foi {maiorPeso}Kg. As pessoas deste grupo são: {pessoasMaisPesadas[:-2]}.')
+print(f'O menor peso encontrado foi {menorPeso}Kg. As pessoas deste grupo são: {pessoasMaisLeves[:-2]}.')
