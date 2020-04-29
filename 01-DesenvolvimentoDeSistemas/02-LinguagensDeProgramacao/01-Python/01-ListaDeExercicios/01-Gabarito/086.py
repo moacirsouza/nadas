@@ -10,7 +10,7 @@ titulo = f' Usando números inteiros preencha \
 a matriz {tamanhoDaMatriz}x{tamanhoDaMatriz} a seguir '
 
 print('-'*len(titulo))
-print(f'{titulo}')
+print(titulo)
 print('-'*len(titulo))
 
 for linha in range(tamanhoDaMatriz):
