@@ -9,7 +9,8 @@ Para saber mais, acesse [a definição oficial da Wikipedia.](https://en.wikiped
 As seguintes linguagens são estudadas pelos participantes do projeto:
 
 - [01-Python](01-Python): Iniciada.
-- 02-JavaScript02-JavaScript: WiP.
-- 03-ShellScript03-ShellScript: WiP.
-- 04-Go04-Go: WiP.
-- 05-Rust05-Rust: WiP.
+- 02-JavaScript: WiP.
+- 03-ShellScript: WiP.
+- 04-Go: WiP.
+- 05-Rust: WiP.
+
