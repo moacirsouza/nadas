@@ -15,16 +15,16 @@ locutor = ['Você é um ponto, Anabela!',
            'Olá Anabela! Madrugou!',
            'O quê???',
            'Gosto tanto de te ouvir, Anabela!',
-           'Estou-me a ficar consigo Anabela',
-           'Anabala! Vamos lá ou não?',
-           'Anabela. A ver se nos entendemos...',
+           'Estou-me a ficar consigo, Anabela',
+           'Anabela! Vamos lá ou não?',
+           'Anabela... A ver se nos entendemos...',
            'Vai me dar o fanico consigo, Anabela!',
            'Anabela, você está a me fazer transpirar. A sério.',
            'É MAIS de quatro e meio, Anabela!',
            'Mais para frente!',
            'Vai me dar o treco consigo, Anabela!',
            'Ai Jesus, para o que te deu hoje!',
-           'Quatro quinehntos e qualquer coisa! Diga!']
+           'Quatro quinhentos e qualquer coisa! Diga!']
 
 print('-'*len(titulo))
 print(titulo)
