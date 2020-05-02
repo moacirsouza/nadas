@@ -12,11 +12,12 @@ print(f'{titulo}')
 print('-'*len(titulo))
 
 while True:
-    ### A cada iteração é adicionada à lista "alunos" uma lista contendo uma
-    ### "string" vazia na primeira posição ("alunos[0]") e uma nova lista
-    ### com três zeros na segunda posição ("alunos[1]"). Os três zeros
-    ### correspondem, respectivamente, às duas notas do aluno e a média
-    ### aritmética delas
+    ### A cada iteração uma lista com dois elementos é adicionada a "alunos".
+    ### O primeiro, i.e. "aluno[0]", é uma "string" vazia, onde o nome do aluno
+    ### será armazenado.
+    ### O segundo, i.e. "alunos[1]", é uma nova lista contendo três zeros.
+    ### Estes zeros correspondem, respectivamente, às duas notas do aluno e à
+    ### média aritmética delas
     alunos.append(['', [0, 0, 0]])
 
     nome = input(f'Aluno {indice+1:02d}: ').strip()
@@ -24,12 +25,12 @@ while True:
     nota02 = float(input('Nota 02: ').strip())
     media = (nota01+nota02)/2
 
-    ### Cada indexação com a variável "indice" corresponde a um aluno e o
-    ### primeiro índice zero, "[0]" corresponde ao nome do aluno
+    ### Cada indexação com a variável "indice" corresponde a um aluno.
+    ### A partir daí, o primeiro índice zero corresponde ao nome do aluno
     alunos[indice][0] = nome
-    ### Aqui o índice "[1]" acessa a lista contendo as duas notas de cada
-    ### aluno. Estas, por sua vez, são acessadas com os últimos índices
-    ### "[0]" e "[1]", respectivamente
+    ### Aqui o primeiro índice um acessa a lista que contém as notas e média
+    ### de cada aluno. Estes últimos, por sua vez, são acessados,
+    ### respectivamente pelos últimos indices zero, um e dois
     alunos[indice][1][0] = nota01
     alunos[indice][1][1] = nota02
     alunos[indice][1][2] = media

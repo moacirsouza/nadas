@@ -8,6 +8,9 @@ from random import randint
 
 titulo = ' Palpitador "Anabela de Malhadas" para MEGA-SENA '
 todosOsJogos = []
+
+### Para quem não conhece a Anabela de Malhadas, segue a
+### referência: https://www.youtube.com/watch?v=hIrRNFa8OiA
 locutor = ['Você é um ponto, Anabela!',
            'Olá Anabela! Madrugou!',
            'O quê???',
