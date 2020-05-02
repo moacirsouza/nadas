@@ -26,11 +26,13 @@ while True:
     media = (nota01+nota02)/2
 
     ### Cada indexação com a variável "indice" corresponde a um aluno.
-    ### A partir daí, o primeiro índice zero corresponde ao nome do aluno
+    ### A partir daí, o primeiro índice zero ("[0]") corresponde ao nome
+    ### do aluno
     alunos[indice][0] = nome
-    ### Aqui o primeiro índice um acessa a lista que contém as notas e média
-    ### de cada aluno. Estes últimos, por sua vez, são acessados,
-    ### respectivamente pelos últimos indices zero, um e dois
+    ### Aqui o primeiro índice um ("[1]") acessa a lista que contém as notas
+    ### e média de cada aluno. Estes últimos, por sua vez, são acessados,
+    ### respectivamente, pelos últimos indices zero ("[0]"), um ("[1]") e
+    ### dois ("[2]")
     alunos[indice][1][0] = nota01
     alunos[indice][1][1] = nota02
     alunos[indice][1][2] = media
@@ -55,5 +57,5 @@ print('{:^{tamanho}}'.format('Boletins', tamanho=len(titulo)))
 print('-'*len(titulo))
 
 for posicao, item in enumerate(alunos):
-    print(f'{posicao+1} - {item[0]} {item[1][2]}')
+    print(f'{posicao+1:02d} - {item[0]:.<20} {item[1][2]}')
 print('-'*len(titulo))
