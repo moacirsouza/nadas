@@ -121,56 +121,31 @@ Há duas listas principais de Exercícios que serão resolvidas no projeto:
      - B) Os últimos 4 colocados da tabela.
      - C) Uma lista com os times em ordem alfabética.
      - D) Em que posição da tabela está o time Chapecoense.
-   - [x] [074](01-Gabarito/074.py)) Crie um programa que vai gerar cinco números aleatórios e colocar em uma tupla.
-Depois disso, mostre a listagem de números gerados e também indique o menor e o maior
-valor que estão na tupla.
-   - [x] [075](01-Gabarito/075.py)) Desenvolva um programa que leia quatro valores pelo teclado e guarde-os em uma
-tupla. No final, mostre:
-A) Quantas vezes apareceu o valor 9.
-B) Em que posição foi digitado o primeiro valor 3.
-C) Quais foram os números pares.
-   - [x] [076](01-Gabarito/076.py)) Crie um programa que tenha uma tupla única com nomes de produtos e seus respectivos
-preços, na sequência. No final, mostre uma listagem de preços organizando os dados em
-forma tabular.
-   - [x] [077](01-Gabarito/077.py)) Crie um programa que tenha uma tupla com várias palavras (não usar acentos). Depois
-disso, você deve mostrar, para cada palavra, quais são as suas vogais.
-   - [x] [078](01-Gabarito/078.py)) Faça um programa que leia 5 valores numéricos de guarde-os em uma lista. No final,
-mostre qual foi o maior e o menor valor digitado e suas respectivas posições na lista.
-   - [x] [079](01-Gabarito/079.py)) Crie um programa onde o usuário possa digitar vários valores numéricos e
-cadastre-os em uma lista. Caso o número já exista lá dentro, ele não será
-adicioando. No final, serão exibidos todos os valores únicos digitados, em
-ordem crescente.
-   - [x] [080](01-Gabarito/080.py)) Crie um programa onde o usuário possa digitar cinco valores numéricos e cadastre-os
-em uma lista, já na posição correta de inserção (sem usar o sort()). No final, mostre a
-lista ordenada na tela.
-   - [x] [081](01-Gabarito/081.py)) Crie um programa que vai ler vários números e colocar em uma lista. Depois disso,
-mostre:
-A) Quantos números foram digitados.
-B) A lista de valores, ordenada de forma decrescente.
-C) Se o valor 5 foi digitado e está ou não na lista.
-   - [x] [082](01-Gabarito/082.py)) Crie um programa que vai ler vários números e colocar em uma lita. Depois disso,
-crie duas listas extras, que vão conter apenas os valores pares e os valores ímpares
-digitados, respectivamente. Ao final, mostre o conteúdo das três listas geradas.
-   - [x] [083](01-Gabarito/083.py)) Crie um programa onde o usuário digite uma expressão qualquer que use parênteses.
-Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e
-fechados na ordem correta.
-   - [x] [084](01-Gabarito/084.py)) Faça um programa que leia nome e peso de várias pessoas, guardando tudo em uma
-lista. No final, mostre:
-A) Quantas pessoas foram cadastradas.
-B) Uma listagem com as pessoas mais pesadas.
-C) Uma listagem com as pessoas mais leves.
-   - [x] [085](01-Gabarito/085.py)) Crie um programa onde o usuário possa digitar sete valores numéricos e cadastre-os
-em uma lista única que mantenha separados os valores pares e ímpares. No final, mostre
-os valores pares e ímpares em ordem crescente.
-   - [x] [086](01-Gabarito/086.py)) Crie um programa que crie uma matriz de dimensão 3x3 e preencha com valores lidos
-pelo teclado. No final, mostre a matriz na tela com a formatação correta.
+   - [x] [074](01-Gabarito/074.py)) Crie um programa que vai gerar cinco números aleatórios e colocar em uma tupla. Depois disso, mostre a listagem de números gerados e também indique o menor e o maior valor que estão na tupla.
+   - [x] [075](01-Gabarito/075.py)) Desenvolva um programa que leia quatro valores pelo teclado e guarde-os em uma tupla. No final, mostre:
+      - A) Quantas vezes apareceu o valor 9.
+      - B) Em que posição foi digitado o primeiro valor 3.
+      - C) Quais foram os números pares.
+   - [x] [076](01-Gabarito/076.py)) Crie um programa que tenha uma tupla única com nomes de produtos e seus respectivos preços, na sequência. No final, mostre uma listagem de preços organizando os dados em forma tabular.
+   - [x] [077](01-Gabarito/077.py)) Crie um programa que tenha uma tupla com várias palavras (não usar acentos). Depois disso, você deve mostrar, para cada palavra, quais são as suas vogais.
+   - [x] [078](01-Gabarito/078.py)) Faça um programa que leia 5 valores numéricos de guarde-os em uma lista. No final, mostre qual foi o maior e o menor valor digitado e suas respectivas posições na lista.
+   - [x] [079](01-Gabarito/079.py)) Crie um programa onde o usuário possa digitar vários valores numéricos e cadastre-os em uma lista. Caso o número já exista lá dentro, ele não será adicioando. No final, serão exibidos todos os valores únicos digitados, em ordem crescente.
+   - [x] [080](01-Gabarito/080.py)) Crie um programa onde o usuário possa digitar cinco valores numéricos e cadastre-os em uma lista, já na posição correta de inserção (sem usar o sort()). No final, mostre a lista ordenada na tela.
+   - [x] [081](01-Gabarito/081.py)) Crie um programa que vai ler vários números e colocar em uma lista. Depois disso, mostre:
+      - A) Quantos números foram digitados.
+      - B) A lista de valores, ordenada de forma decrescente.
+      - C) Se o valor 5 foi digitado e está ou não na lista.
+   - [x] [082](01-Gabarito/082.py)) Crie um programa que vai ler vários números e colocar em uma lita. Depois disso, crie duas listas extras, que vão conter apenas os valores pares e os valores ímpares digitados, respectivamente. Ao final, mostre o conteúdo das três listas geradas.
+   - [x] [083](01-Gabarito/083.py)) Crie um programa onde o usuário digite uma expressão qualquer que use parênteses. Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e fechados na ordem correta.
+   - [x] [084](01-Gabarito/084.py)) Faça um programa que leia nome e peso de várias pessoas, guardando tudo em uma lista. No final, mostre:
+      - A) Quantas pessoas foram cadastradas.
+      - B) Uma listagem com as pessoas mais pesadas.
+      - C) Uma listagem com as pessoas mais leves.
+   - [x] [085](01-Gabarito/085.py)) Crie um programa onde o usuário possa digitar sete valores numéricos e cadastre-os em uma lista única que mantenha separados os valores pares e ímpares. No final, mostre os valores pares e ímpares em ordem crescente.
+   - [x] [086](01-Gabarito/086.py)) Crie um programa que crie uma matriz de dimensão 3x3 e preencha com valores lidos pelo teclado. No final, mostre a matriz na tela com a formatação correta.
    - [x] [087](01-Gabarito/087.py)) Aprimore o desafio anterior, mostrando no final:
-A) A soma de todos os valores somaDosPares digitados.
-B) A soma dos valores da terceira coluna.
-C) O maior valor da segunda linha.
-   - [x] [088](01-Gabarito/088.py)) Faça um programa que ajude um jogador da MEGA SENA a criar palpites. O programa
-vai perguntar quantos jogos serão gerados e vai sortear 6 números entre 1 e 60 para
-cada jogo, cadastrando tudo em uma lista composta.
-   - [x] [089](01-Gabarito/089.py)) Crie um programa que leia nome e duas notas de vários alunos e guarde tudo em
-uma lista composta. No final, mostre um boletim contendo a média de cada um e permita
-que o usuário possa mostrar as notas de cada aluno individualmente.
+      - A) A soma de todos os valores somaDosPares digitados.
+      - B) A soma dos valores da terceira coluna.
+      - C) O maior valor da segunda linha.
+   - [x] [088](01-Gabarito/088.py)) Faça um programa que ajude um jogador da MEGA SENA a criar palpites. O programa vai perguntar quantos jogos serão gerados e vai sortear 6 números entre 1 e 60 para cada jogo, cadastrando tudo em uma lista composta.
+   - [x] [089](01-Gabarito/089.py)) Crie um programa que leia nome e duas notas de vários alunos e guarde tudo em uma lista composta. No final, mostre um boletim contendo a média de cada um e permita que o usuário possa mostrar as notas de cada aluno individualmente.
