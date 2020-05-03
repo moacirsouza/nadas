@@ -11,6 +11,7 @@ print('-'*len(titulo))
 print(f'{titulo}')
 print('-'*len(titulo))
 
+### Preenchimento da lista de alunos com nome, duas notas e a média ente elas
 while True:
     ### A cada iteração uma lista com dois elementos é adicionada a "alunos".
     ### O primeiro, i.e. "aluno[0]", é uma "string" vazia, onde o nome do aluno
@@ -52,10 +53,21 @@ while True:
     ### alterada, se o laço não for interrompido
     indice += 1
 
+### Apresentação do Boletim com um sequencial, nome e média de cada aluno
 print('-'*len(titulo))
 print('{:^{tamanho}}'.format('Boletins', tamanho=len(titulo)))
 print('-'*len(titulo))
+print('{:<3} - {:<30} {}'.format('Número', 'Aluno', 'Média'))
+print('-'*len(titulo))
 
 for posicao, item in enumerate(alunos):
-    print(f'{posicao+1:02d} - {item[0]:.<20} {item[1][2]}')
+    print(f'{posicao+1:06d} - {item[0]:<30.30} {item[1][2]:>2,.2f}')
 print('-'*len(titulo))
+
+### Apresentação das notas de cada aluno, individualmente
+while True:
+    boletimParaApresentar = int(input('Visualizar boletim número: ').strip())
+    if boletimParaApresentar == 999:
+        break
+    else:
+        print(alunos[boletimParaApresentar-1])
