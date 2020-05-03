@@ -21,6 +21,8 @@ while True:
     ### média aritmética delas
     alunos.append(['', [0, 0, 0]])
 
+    ### TODO: Fazer uma validação para que as notas informadas não possam
+    ### ser números negativos ou maiores que 10.
     nome = input(f'Aluno {indice+1:02d}: ').strip()
     nota01 = float(input('Nota 01: ').strip())
     nota02 = float(input('Nota 02: ').strip())
@@ -61,13 +63,29 @@ print('{:<3} - {:<30} {}'.format('Número', 'Aluno', 'Média'))
 print('-'*len(titulo))
 
 for posicao, item in enumerate(alunos):
-    print(f'{posicao+1:06d} - {item[0]:<30.30} {item[1][2]:>2,.2f}')
+    ### Aqui a variável "posicao" guarda o índice de cada lista que contém
+    ### o nome do aluno, as notas e a média. Essas listas, por sua vez,
+    ### são referenciadas, a cada iteração, por "item". É importante lembar
+    ### que estas informações estão armazenadas de forma posicional, a saber:
+    ### item[0] é o nome, "item[1][0]" e "item[1][1]" as duas primeiras notas,
+    ### respectivamente, e "item[1][2]", a média
+    print(f'{posicao+1:06d} - {item[0]:.<30.25} {item[1][2]:>5,.2f}')
+
 print('-'*len(titulo))
 
 ### Apresentação das notas de cada aluno, individualmente
 while True:
-    boletimParaApresentar = int(input('Visualizar boletim número: ').strip())
+    boletimParaApresentar = int(input('Ver boletim (999 para sair): ').strip())
     if boletimParaApresentar == 999:
+        print('Programa finalizado!')
         break
     else:
-        print(alunos[boletimParaApresentar-1])
+        ### É importante notar que, apesar de utilizar os mesmos
+        ### identificadores do laço de criação da lista, não há
+        ### problemas, uma vez que os escopos em que as variáveis
+        ### existem são distintos e não conflitantes
+        nome = alunos[boletimParaApresentar-1][0]
+        nota01 = alunos[boletimParaApresentar-1][1][0]
+        nota02 = alunos[boletimParaApresentar-1][1][1]
+
+        print(f'As notas de "{nome}" foram {nota01} e {nota02}')
