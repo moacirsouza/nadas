@@ -1,56 +1,39 @@
 print("""
-091) Crie um programa onde 4 jogadores joguem um dado e tenham resultados aleatórios.
+091) Crie um programa onde 4 jogadas joguem um dado e tenham resultados aleatórios.
 Guarde esses resultados em um dicionário. No final, coloque esse dicionário em ordem,
 sabendo que o vencedor tirou o maior número no dado. 
 """)
 
 from random import randint
+from time import sleep
 
-jogadores = {}
-vencedores = {'1º':{}, '2º':{}, '3º':{}, '4º':{}}
+jogadas = {}
+vencedores = []
 larguraDaTabela = 30
-contador = 0
+posicaoDoMaiorResultado = 0
 
 print('-'*larguraDaTabela)
-print('{:^{centralizador}}'.format('Sorteio', centralizador=larguraDaTabela))
+print(f'{"Sorteio":^{larguraDaTabela}}')
 print('-'*larguraDaTabela)
 
 for numero in range(4):
+    jogador=f'Jogador {numero+1:02d}'
     numeroSorteado = randint(1, 6)
-    jogadores[f'Jogador {numero+1:02d}'] = numeroSorteado
-    # jogadores[f'{numero+1}º'] = numeroSorteado
-    
-    print(f'Jogador {numero+1:02d}: {numeroSorteado} ')
+    jogadas[jogador] = numeroSorteado
+   
+    print(f'{jogador}: {numeroSorteado}')
+    sleep(0.5)
 
-    # for indice in range(len(vencedores)):
-    #     print(indice, contador, numeroSorteado)
-    #     #print(vencedores[f'{indice+1}º'])
-    #     if numeroSorteado > vencedores[f'{indice+1}º'].get(f'Jogador {indice+1:02d}', -1):
-    #         print(vencedores[f'{indice+1}º'].get(f'Jogador {indice+1:02d}', -1))
-    #         print('nao existe')
-    #         contador += 1
-    #     vencedores.update(jogadores)
-    #     contador = 0
-
-# for chave, valor in jogadores.items():
-#     print(f'Chave: {chave}. Valor: {valor}')
-#     if 
-
-# lista = []
-# cont = 0
-# for c in range(0, 5):
-#     x = int(input('Qual seu valor? '))
-#     for t in range(0, len(lista)):
-#         if x > lista[t]:
-#             cont = cont + 1
-#     print(f'O valor {x} foi adicionado na posição {cont}')
-#     lista.insert(cont, x)
-#     cont = 0
-# print(lista)
+    for pontuacao in range(len(vencedores)):
+        if jogadas[jogador] <= vencedores[pontuacao][1]:
+            posicaoDoMaiorResultado += 1
+    vencedores.insert(posicaoDoMaiorResultado, [jogador, jogadas[jogador]])
+    posicaoDoMaiorResultado = 0
 
 print('-'*larguraDaTabela)
-print('{:^{centralizador}}'.format('Resultado', centralizador=larguraDaTabela))
+print(f'{"Resultado":^{larguraDaTabela}}')
 print('-'*larguraDaTabela)
-
-print(jogadores)
-print(vencedores)
+for chave, resultado in enumerate(vencedores):
+    print(f'{chave+1}º lugar: {resultado[0]}: {resultado[1]} pontos')
+    sleep(0.5)
+print('-'*larguraDaTabela)
