@@ -25,9 +25,10 @@ for numero in range(4):
     sleep(0.5)
 
     for pontuacao in range(len(vencedores)):
-        if jogadas[jogador] <= vencedores[pontuacao][1]:
+        if numeroSorteado <= vencedores[pontuacao][1]:
             posicaoDoMaiorResultado += 1
-    vencedores.insert(posicaoDoMaiorResultado, [jogador, jogadas[jogador]])
+
+    vencedores.insert(posicaoDoMaiorResultado, [jogador, numeroSorteado])
     posicaoDoMaiorResultado = 0
 
 print('-'*larguraDaTabela)
