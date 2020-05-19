@@ -3,6 +3,8 @@ print("""
 um sistema de visualização de detalhes do aproveitamento de cada jogador.
 """)
 
+### TODO: Reorganizar o código para promover maior legibilidade
+
 titulo = ' Programa de Aramazenamento e aproveitamento de Jogadores '
 formatador = len(titulo)
 totalDeGols = 0
