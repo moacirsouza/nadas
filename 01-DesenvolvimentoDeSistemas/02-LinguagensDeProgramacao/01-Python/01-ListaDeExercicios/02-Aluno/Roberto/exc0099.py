@@ -1,6 +1,6 @@
 print("""
 099) Faça um programa que tenha uma função chamada
-maio(), que receba vários parâmetros com valores inteiros. Seu programa tem que analisar todas os valores e dizer qual deles é o maior.
+maior(), que receba vários parâmetros com valores inteiros. Seu programa tem que analisar todas os valores e dizer qual deles é o maior.
 """)
 from time import sleep
 
