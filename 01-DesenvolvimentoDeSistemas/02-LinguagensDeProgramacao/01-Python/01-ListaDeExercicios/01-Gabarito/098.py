@@ -8,9 +8,14 @@ B) de 10 até 0, de 2 em 2
 C) uma contagem personalizada
 """)
 
+### Uso do método "map()" para transformar cada item da lista em
+### uma "string" ao invés de um inteiro
 def contador():
-    print(f'Contagem de 1 até 10 (Sem temporização): {list(range(1,11))}')
-    print(f'Contagem de 10 a 0, de 2 em 2 (Sem temporização): {list(range(10,-1,-2))}')
+    deUmADez = ', '.join(map(str, list(range(1,11))))
+    deDezAZeroDeDoisEmDois = ', '.join(map(str, list(range(10,-1,-2))))
+
+    print(f'Contagem de 1 até 10: {deUmADez}.')
+    print(f'Contagem de 10 a 0, de 2 em 2: {deDezAZeroDeDoisEmDois}.')
 
     ### Contagem personalizada
     inicio = int(input('Início: ').strip())
