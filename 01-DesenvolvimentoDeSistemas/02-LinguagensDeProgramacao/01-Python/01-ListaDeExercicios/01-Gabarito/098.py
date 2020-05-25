@@ -3,16 +3,16 @@ print("""
 parâmetros: início, fim e passo. Seu programa tem que realizar três contagens
 através da função criada:
 
-A) de 1 até 10, de 1 em 1
-B) de 10 até 0, de 2 em 2
-C) uma contagem personalizada
+A) De 1 até 10, de 1 em 1
+B) De 10 até 0, de 2 em 2
+C) Uma contagem personalizada
 """)
 
 ### Uso do método "map()" para transformar cada item da lista em
 ### uma "string" ao invés de um inteiro
 def contador():
-    deUmADez = ', '.join(map(str, list(range(1,11))))
-    deDezAZeroDeDoisEmDois = ', '.join(map(str, list(range(10,-1,-2))))
+    deUmADez = ', '.join(map(str, list(range(1, 11))))
+    deDezAZeroDeDoisEmDois = ', '.join(map(str, list(range(10, -1, -2))))
 
     print(f'Contagem de 1 até 10: {deUmADez}.')
     print(f'Contagem de 10 a 0, de 2 em 2: {deDezAZeroDeDoisEmDois}.')
