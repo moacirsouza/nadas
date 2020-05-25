@@ -3,14 +3,14 @@ print("""
 texto qualquer como parâmetro e mostre uma mensagem com tamanho adaptável.
 """)
 
-def escreva(mensagem):
+def escreva(mensagem, caractereDeFormatacao='~'):
     mensagemFormatada = f' {mensagem} '
     comprimentoDaMensagem = len(mensagemFormatada)
 
-    print('~'*comprimentoDaMensagem)
+    print(f'{caractereDeFormatacao}'*comprimentoDaMensagem)
     print(mensagemFormatada)
-    print('~'*comprimentoDaMensagem)
+    print(f'{caractereDeFormatacao}'*comprimentoDaMensagem)
 
 
 mensagemDoUsuario = input('Digite sua mensagem: ').strip()
-escreva(mensagemDoUsuario)
+escreva(mensagemDoUsuario, '£')
