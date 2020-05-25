@@ -9,4 +9,5 @@ def maior(*numeros):
 
 maior(2, 3)
 maior(1, 2, 3, 4)
-maior(6, 7, 8, 9)
+maior(6, 7, 8, 9, 20)
+maior(45, 6, 7, 21, 34, 232)
