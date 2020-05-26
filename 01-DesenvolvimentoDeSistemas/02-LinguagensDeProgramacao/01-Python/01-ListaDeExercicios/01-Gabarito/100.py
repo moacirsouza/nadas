@@ -11,7 +11,7 @@ from time import sleep
 numeros = []
 
 def sorteia(lista):
-
+    
     print('Números sorteados: ')
 
     for passo in range(5):
@@ -23,7 +23,14 @@ def sorteia(lista):
 
 
 def somaPar(lista):
-    print(f'A soma dos números sorteados é {sum(lista)}')
+
+    soma = 0
+
+    for item in lista:
+        if item%2 == 0:
+            soma += item
+
+    print(f'A soma dos números sorteados é {soma}')
 
 
 sorteia(numeros)

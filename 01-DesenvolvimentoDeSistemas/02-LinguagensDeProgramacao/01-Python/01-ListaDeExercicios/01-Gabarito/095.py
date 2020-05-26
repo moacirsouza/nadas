@@ -57,7 +57,7 @@ print('-'*formatador)
 print(f'Registro - Nome - Gols por Partida - Total de Gols')
 
 for registro, dicionario in enumerate(time):
-    print(f'{registro+1} - {dicionario["Nome"]} - {dicionario["GolsPorPartida"]} - {dicionario["TotalDeGols"]}')
+    print(f'{registro+1:08d} - {dicionario["Nome"]} - {dicionario["GolsPorPartida"]} - {dicionario["TotalDeGols"]}')
 
 print('-'*formatador)
 print(f'{"Apresentação de Resultado por Jogador":^{formatador}}')
