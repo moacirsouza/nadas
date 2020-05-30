@@ -17,8 +17,8 @@ gols = input('Número de Gols: ').strip()
 if gols.isnumeric():
     gols = int(gols)
 else:
-    erroGolsNaoInteiro = 'ERRO: É preciso informar um número inteiro \
-para a quantidade de gols. Neste caso o programa assume o valor zero.\n'
+    erroGolsNaoInteiro = '\nERRO: É preciso informar um número inteiro \
+para a quantidade de gols.\nNeste caso o programa assume o valor zero.\n'
     print(erroGolsNaoInteiro)
     gols = 0
 
