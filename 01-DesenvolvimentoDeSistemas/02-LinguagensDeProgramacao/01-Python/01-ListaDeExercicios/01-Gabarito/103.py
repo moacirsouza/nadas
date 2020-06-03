@@ -5,7 +5,19 @@ O programa deverá ser capaz de mostrar a ficha do jogador, mesmo que algum
 dado não tenha sido informado corretamente.
 """)
 
-def ficha(jogador='<desconhecido>', numeroDeGols=0):
+def ficha(jogador='<desconhecido>', numeroDeGols='0'):
+
+    if jogador == '':
+        jogador = '<desconhecido>'
+
+    if numeroDeGols.isnumeric():
+        numeroDeGols = int(numeroDeGols)
+    else:
+        erroGolsNaoInteiro = '\nERRO: É preciso informar um número inteiro \
+para a quantidade de gols.\nNeste caso o programa assume o valor zero.\n'
+        print(erroGolsNaoInteiro)
+        numeroDeGols = 0
+
     retorno = f'O jogador {jogador} fez {numeroDeGols} gols.'
 
     print(retorno)
@@ -14,15 +26,14 @@ def ficha(jogador='<desconhecido>', numeroDeGols=0):
 nome = input('Nome do Jogador: ').strip()
 gols = input('Número de Gols: ').strip()
 
-if gols.isnumeric():
-    gols = int(gols)
-else:
-    erroGolsNaoInteiro = '\nERRO: É preciso informar um número inteiro \
-para a quantidade de gols.\nNeste caso o programa assume o valor zero.\n'
-    print(erroGolsNaoInteiro)
-    gols = 0
+### Chamada com os dois parâmetros
+ficha(nome, gols)
 
-if nome == '':
-    ficha(numeroDeGols=gols)
-else:
-    ficha(nome, gols)
+### Chamada com apenas o primeiro parâmetro
+# ficha(jogador=nome)
+
+### Chamada com apenas o segundo parâmetro
+# ficha(numeroDeGols=gols)
+
+### Chamada sem nenhum parâmetro
+# ficha()
