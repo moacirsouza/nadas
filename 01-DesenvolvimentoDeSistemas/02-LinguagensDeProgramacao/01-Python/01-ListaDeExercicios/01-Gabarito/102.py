@@ -29,4 +29,6 @@ def fatorial(numero, show=False):
     
     return resposta
 
-print(fatorial(9))
+
+entrada = 5
+print(f'O fatorial de {entrada} é: {fatorial(5, show=True)}')

@@ -12,7 +12,7 @@ from datetime import date
 
 def voto(anoDeNascimento):
 
-    anoAtual = date.today().year    
+    anoAtual = date.today().year
     idade = anoAtual - anoDeNascimento
     mensagemBase = f'Você tem {idade} anos: Voto'
 
