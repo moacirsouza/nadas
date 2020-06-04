@@ -10,6 +10,7 @@ use algumas dessas funções.
 ### ao Python que aquele diretório é um pacote.
 from modulos import moeda
 
+tamanhoDaBarra = 65
 preco = 567
 incremento = 15
 decremento = 25
@@ -18,6 +19,14 @@ precoDecrementado = moeda.diminuir(preco, decremento)
 precoDobrado = moeda.dobro(preco)
 precoPelaMetade = moeda.metade(preco)
 
+
+print('-'*tamanhoDaBarra)
+print(f'{"Os valores informados foram":^{tamanhoDaBarra}}')
+print(f"""
+Preço: {preco}
+Taxa de incremento: {incremento}%
+Taxa de redução: {decremento}%""")
+print('-'*65)
 print(f'O valor {preco}, ao sofrer um aumento de {incremento}% fica igual a {precoIncrementado}.')
 print(f'O valor {preco}, ao sofrer uma reducao de {decremento}% fica igual a {precoDecrementado}.')
 print(f'O dobro do preço {preco} é {precoDobrado}.')
