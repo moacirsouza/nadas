@@ -4,12 +4,11 @@ diminuir(), dobro() e metade(). Faça também um programa que importe esse módu
 use algumas dessas funções.
 """)
 
-### Esse é o "truque" para importar modulos de um local fixo
-### Referência: https://do.co/2XuLGEN
-# import sys
-# sys.path.append('modulos')
+### O truque aqui foi transformar o diretório "modulos" em um
+### pacote e para fazer isso, basta inserir o arquivo "__init__.py"
+### dentro dele. O arquivo pode ser vazio, só de existir já indica
+### ao Python que aquele diretório é um pacote.
 from modulos import moeda
-
 
 preco = 567
 incremento = 15
