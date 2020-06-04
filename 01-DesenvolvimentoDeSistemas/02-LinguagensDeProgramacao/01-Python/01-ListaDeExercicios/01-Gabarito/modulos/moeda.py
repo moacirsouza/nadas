@@ -17,3 +17,7 @@ def metade(preco):
     retorno = preco/2
     return retorno
 
+
+def moeda(preco):
+    retorno = f'R$ {preco:.2f}'
+    return retorno
