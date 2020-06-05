@@ -11,7 +11,7 @@ de alunos e vai retornar um dicionário com as seguintes informações:
 Adicione também as docstrings dessa função para consulta pelo desenvolvedor.
 """)
 
-def notas(*notas, apresentaSituacao=False):
+def apresentaNotas(*notasDosAlunos, apresentaSituacao=False):
     """Função que sumariza informações sobre notas e média de uma turma
     de tamanho variável.
 
@@ -22,7 +22,6 @@ def notas(*notas, apresentaSituacao=False):
         - RUIM: Média entre 0 e 5.9
         - BOA: Média entre 6 e 8
         - EXCELENTE: Média acima de 9
-        
 
     Returns:
         [dict] -- Retorna o seguinte conjunto de informações, em um
@@ -33,10 +32,10 @@ def notas(*notas, apresentaSituacao=False):
         - Média da Turma
         - Situação da Turma [Se apresentaSituacao=True]
     """
-    quantidade = len(notas)
-    maiorNota = max(notas)
-    menorNota = min(notas)
-    somaDasNotas = sum(notas)
+    quantidade = len(notasDosAlunos)
+    maiorNota = max(notasDosAlunos)
+    menorNota = min(notasDosAlunos)
+    somaDasNotas = sum(notasDosAlunos)
     media = somaDasNotas/quantidade
 
     if 0 < media <= 5.9:
@@ -56,6 +55,6 @@ def notas(*notas, apresentaSituacao=False):
     
     return resposta
 
-resposta = notas(8.6, 7.7, 8.9, 10, 2.5, 7, 8, 1.0, 0.5, 3.2, apresentaSituacao=True)
+resposta = apresentaNotas(8.6, 7.7, 8.9, 10, 2.5, 7, 8, 1.0, 0.5, 3.2, apresentaSituacao=True)
 print(resposta)
-# help(notas)        
+# help(apresentaNotas)
