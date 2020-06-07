@@ -7,7 +7,7 @@ from modulos import moeda
 
 tamanhoDaBarra = 65
 preco = 567
-precoFormatado =  moeda.moeda(567)
+precoFormatado = moeda.moeda(567)
 incremento = 15
 decremento = 25
 precoIncrementado = moeda.moeda(moeda.aumentar(preco, incremento))
