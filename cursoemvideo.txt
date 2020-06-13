@@ -1,0 +1,5 @@
+Pedro;35
+Paulo;56
+Renata;43
+Paula;33
+Marcelo;18
