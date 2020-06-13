@@ -4,7 +4,7 @@ resumo(), que mostre na tela algumas informações geradas pelas funções que j
 no módulo criado até aqui.
 """)
 
-from modulos import moeda
+from utilidadesCeV import moeda
 
 preco = float(input('Informe o preço: ').strip())
 aumento = float(input('Informe o acréscimo percentual: ').strip())

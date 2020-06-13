@@ -2,7 +2,7 @@ def separador(caractere='-', repeticoes=30):
     print(caractere*repeticoes)
 
 
-def menu(titulo='MENU PRINCIPAL'):
+def imprimeMenu(titulo='MENU PRINCIPAL'):
 
     comprimentoDoTitulo = len(titulo)*3
     opcoes = {
@@ -22,12 +22,19 @@ def menu(titulo='MENU PRINCIPAL'):
     
     separador(repeticoes=comprimentoDoTitulo)
 
-    ### Seleção da opção do menu
+    return opcoes
+
+
+def validaMenu():
+
+    opcoes = imprimeMenu()
+
     while True:
         try:
             acaoDoMenu = int(input('Escolha uma opção: ').strip())
         except ValueError:
             print('ERRO: Opção inválida. Escolha um item do Menu.')
+            imprimeMenu()
             continue
         else:
             if str(acaoDoMenu) in opcoes.keys():
@@ -38,4 +45,4 @@ def menu(titulo='MENU PRINCIPAL'):
                 continue
 
 
-menu()
+validaMenu()

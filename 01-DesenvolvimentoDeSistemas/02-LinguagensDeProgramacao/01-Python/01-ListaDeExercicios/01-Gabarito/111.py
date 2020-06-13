@@ -8,6 +8,6 @@ print('Desde a aula 107 já utilizamos a estrutura de pacotes ao invés \
 dos módulos simples. Então, não tem o que fazer nesse exercício, a não \
 ser, uma chamada aos métodos já criados.')
 
-from modulos import moeda
+from utilidadesCeV import moeda
 
 moeda.resumo(90, 10, 12)

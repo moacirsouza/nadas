@@ -5,7 +5,7 @@ como a função input(), mas com uma validação de dados para aceitar apenas
 valores que sejam monetários.
 """)
 
-from modulos import moeda
+from utilidadesCeV import moeda
 from utilidadesCeV import dado
 
 preco = dado.leiaDinheiro('Informe o preço (R$): ')

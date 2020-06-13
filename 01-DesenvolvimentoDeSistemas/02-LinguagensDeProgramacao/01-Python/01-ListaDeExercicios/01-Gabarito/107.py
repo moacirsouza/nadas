@@ -8,7 +8,7 @@ use algumas dessas funções.
 ### pacote e para fazer isso, basta inserir o arquivo "__init__.py"
 ### dentro dele. O arquivo pode ser vazio, só de existir já indica
 ### ao Python que aquele diretório é um pacote.
-from modulos import moeda
+from utilidadesCeV import moeda
 
 tamanhoDaBarra = 65
 preco = 567
