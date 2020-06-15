@@ -4,7 +4,7 @@ parâmetro a mais, informando se o valor retornado por elas vai ser ou não form
 pela função moeda(), desenvolvida no desafio 108.
 """)
 
-from modulos import moeda
+from utilidadesCeV import moeda
 
 tamanhoDaBarra = 65
 preco = 567

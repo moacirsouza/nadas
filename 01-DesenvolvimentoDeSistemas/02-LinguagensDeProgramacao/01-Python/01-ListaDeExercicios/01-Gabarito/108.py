@@ -3,7 +3,7 @@ print("""
 que consiga mostrar os números como um valor monetário formatado.
 """)
 
-from modulos import moeda
+from utilidadesCeV import moeda
 
 tamanhoDaBarra = 65
 preco = 567
