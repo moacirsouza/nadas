@@ -1,36 +1,43 @@
-### TODO: Criar uma função para tratamento e apresentação de erros.
 diretorio = 'sistemaDeCadastro'
 arquivo = 'cadastroDePessoas.txt'
 arquivoDeCadastro = arquivo # '/'.join([diretorio, arquivo])
 
-def apresentaErro(erro, funcao):
+def apresentaErro(excecao, funcao):
 
     cabecalhoErro = 'ERRO: '
     cabecalhoAviso = 'AVISO: '
 
-    if erro.__class__ == FileNotFoundError:
-
+    if excecao.__class__ == FileNotFoundError:
         if funcao == 'verPessoas':
             mensagem = f"""
-{cabecalhoAviso}O arquivo "{arquivoDeCadastro}" não foi encontrado.
+{cabecalhoErro}O arquivo "{arquivoDeCadastro}" não foi encontrado.
 Tente cadastrar uma nova pessoa primeiro.
 """
         elif funcao == 'cadastrarPessoas':
             mensagem = f"""
-{cabecalhoErro}O arquivo {arquivoDeCadastro} não foi encontrado.
-Tentarei criá-lo a seguir.
+{cabecalhoAviso}O arquivo {arquivoDeCadastro} não foi encontrado.
+Tentarei criá-lo no caminho {arquivoDeCadastro}.
 """
-    elif erro.__class__ == PermissionError:
-        mensagem = f"""
+    elif excecao.__class__ == PermissionError:
+        if funcao == 'verPessoas':
+            mensagem = f"""
+{cabecalhoErro}O arquivo existe, mas está sem permissão de leitura.
+Por favor, altere as permissões, ou remova o arquivo
+existente para que eu possa recriar minha base de dados.
+Caminho do arquivo atual: {arquivoDeCadastro}"""
+        elif funcao == 'cadastrarPessoas':
+            mensagem = f"""
 {cabecalhoErro}Sinto muito, não tenho permissões suficientes para criar
-minha base de dados. Ela ficaria localizada em: {arquivoDeCadastro}
+minha base de dados. Certifique-se de ter permissões suficientes
+no seguinte diretório: {arquivoDeCadastro}
 """
-    elif erro.__class__ == ValueError:
+    elif excecao.__class__ == ValueError:
         mensagem = f"""
 {cabecalhoAviso}Infome um valor inteiro para a idade.
 """
 
     print(mensagem)
+
 
 def separador(caractere='-', repeticoes=30):
     print(caractere*repeticoes)
@@ -72,13 +79,14 @@ def validaMenu():
             continue
         else:
             if str(acaoDoMenu) in opcoes.keys():
-                # print(f'Você escolheu {acaoDoMenu}')
-
                 if acaoDoMenu == 1:
                     verPessoas()
                 elif acaoDoMenu == 2:
                     cadastrarPessoas()
-                break
+                elif acaoDoMenu == 3:
+                    sairDoSistema()
+                else:
+                    break
             else:
                 print('ERRO: Opção fora do menu.')
                 continue
@@ -88,52 +96,52 @@ def verPessoas():
 
     try:
         referenciaAoArquivo = open(arquivoDeCadastro, 'r')
-    except FileNotFoundError as erro:
-        apresentaErro(erro, 'verPessoas')
-        validaMenu()
+    except Exception as excecao:
+        apresentaErro(excecao, 'verPessoas')
     else:
         print(referenciaAoArquivo.read())
         referenciaAoArquivo.close()
+    finally:
+        validaMenu()
+
 
 
 def cadastrarPessoas():
 
     try:
         referenciaAoArquivo = open(arquivoDeCadastro,'r')
-    except FileNotFoundError as erro:
-        apresentaErro(erro, 'cadastrarPessoas')
-        try:
-            referenciaAoArquivo = open(arquivoDeCadastro, 'w+')
-        except PermissionError as erro:
-            apresentaErro(erro, 'cadastrarPessoas')
+    except Exception as excecao:
+        apresentaErro(excecao, 'cadastrarPessoas')
     else:
-        referenciaAoArquivo = open(arquivoDeCadastro, 'a+')
-        while True:
+        try:
+            referenciaAoArquivo = open(arquivoDeCadastro, 'a+')
+        except Exception as excecao:
+            apresentaErro(excecao, 'cadastrarPessoas')
+        else:
+            separador(repeticoes=40)
+            print('Iniciando o cadastro: ')
+            separador(repeticoes=40)
+
             nome = input('Nome: ').strip()
 
             while True:
                 try:
                     idade = int(input('Idade: ').strip())
-                    break
-                except ValueError as erro:
-                    apresentaErro(erro, 'cadastrarPessoas')
+                except ValueError as excecao:
+                    apresentaErro(excecao, 'cadastrarPessoas')
                     continue
+                else:
+                    break
             
             referenciaAoArquivo.write(f'{nome},{idade}\n')
+            referenciaAoArquivo.close()
+    finally:
+        validaMenu()
 
-            while True:
-                continuar = input('Deseja cadastrar mais pessoas? (s/n)')
-                continuar = continuar.lower().strip()
 
-                if continuar == 'n' or continuar == 's':
-                    break
-
-                print('ERRO: As escolhas limtam-se às letras "S", "s", "N" ou "n".')
-            
-            if continuar == 'n':
-                break
-
-        referenciaAoArquivo.close()
+def sairDoSistema():
+    print('Saindo do sistema...')
+    exit(0)
 
 
 validaMenu()
