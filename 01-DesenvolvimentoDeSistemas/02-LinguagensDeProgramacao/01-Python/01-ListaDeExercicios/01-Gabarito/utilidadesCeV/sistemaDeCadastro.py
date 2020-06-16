@@ -85,6 +85,7 @@ def validaMenu():
 
 
 def verPessoas():
+
     try:
         referenciaAoArquivo = open(arquivoDeCadastro, 'r')
     except FileNotFoundError as erro:
@@ -96,6 +97,7 @@ def verPessoas():
 
 
 def cadastrarPessoas():
+
     try:
         referenciaAoArquivo = open(arquivoDeCadastro,'r')
     except FileNotFoundError as erro:
@@ -125,12 +127,13 @@ def cadastrarPessoas():
 
                 if continuar == 'n' or continuar == 's':
                     break
-                # apresentaErro(IOError as erro, 'cadastrarPessoas')
+
                 print('ERRO: As escolhas limtam-se às letras "S", "s", "N" ou "n".')
             
             if continuar == 'n':
                 break
-            referenciaAoArquivo.close()
+
+        referenciaAoArquivo.close()
 
 
 validaMenu()

@@ -1,3 +1,0 @@
-Jose;35
-Roberto;47
-Maria;85
