@@ -1,8 +1,10 @@
 print("""
-033) Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
+033) Faça um programa que leia três números e mostre qual é o maior
+e qual é o menor.
 """)
 
-### Entrada do programa: Cada uma das três variáveis recebe um número inteiro.
+### Entrada do programa: Cada uma das três variáveis recebe um número
+### inteiro.
 numero01 = int(input('Digite o primeiro número: '))
 numero02 = int(input('Digite o segundo número: '))
 numero03 = int(input('Digite o terceiro número: '))
