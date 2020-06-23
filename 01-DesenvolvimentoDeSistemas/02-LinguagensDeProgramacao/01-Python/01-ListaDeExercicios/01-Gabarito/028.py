@@ -1,6 +1,7 @@
 print("""
-028) Escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça
-para o usuário tentar descobrir qual foi o número escolhido pelo computador.
+028) Escreva um programa que faça o computador "pensar" em um número inteiro
+entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número escolhido
+pelo computador.
 
 O programa deverá escrever na tela se o usuário vendeu ou perdeu.
 """)
@@ -26,9 +27,11 @@ senha = randint(0,5)
 ### conteúdos, o segundo bloco, conhecido como "bloco do else", será
 ### executado. 
 if numero == senha:
-    print('Olha só, acertou!\nVocê e o computador escolheram {}!'.format(numero))
+    print('Olha só, acertou!\nVocê e o computador escolheram \
+{}!'.format(numero))
 else:
-    print('Mais sorte da próxima vez!\nVocê escolheu {}, mas o computador pensou em {}'.format(numero,senha))
+    print('Mais sorte da próxima vez!\nVocê escolheu {}, mas o computador \
+pensou em {}'.format(numero,senha))
 
 ### Uma alternativa para o uso da estrutura tradicional if-else,
 ### neste caso, é a seguinte: Define-se uma variável "mensagem",
@@ -37,7 +40,9 @@ else:
 ### do caso oposto e dentro dele define-se o outro conteúdo possível
 ### da mensagem. Por fim, um "print" único imprime a mensagem, que
 ### sofrerá alteração dependendo da entrada do usuário.
-# mensagem = '\nMais sorte da próxima vez!\nVocê escolheu {}, mas o computador pensou em {}'.format(numero,senha)
+# mensagem = '\nMais sorte da próxima vez!\nVocê escolheu {}, mas o \
+# computador pensou em {}'.format(numero,senha)
 # if numero == senha:
-#     mensagem = '\nOlha só, acertou!\nVocê e o computador escolheram {}!'.format(numero)
+#     mensagem = '\nOlha só, acertou!\nVocê e o computador escolheram \
+# {}!'.format(numero)
 # print(mensagem)
