@@ -1,5 +1,6 @@
 print("""
-025) Crie um programa que leia o nome de uma pessoa e diga se ela tem "SILVA" no nome. 
+025) Crie um programa que leia o nome de uma pessoa e diga se ela tem
+"SILVA" no nome.
 """)
 
 ### Entrada do programa: Recebe o nome de uma pessoa como "string"
@@ -29,5 +30,9 @@ ondeEstaSilva = nomeProcessado.find('silva')
 ### o valor de "nomeProcessado".
 temSilva = nomeProcessado
 
-print('Método 1: Usando o método "find()": Se houver "Silva", mostre em que posição ele aparece. Se não houver, imprima "-1": {}'.format(ondeEstaSilva))
-print('Método 2: Usando o operador "in": Existe "Silva" no nome? -> {}'.format('silva' in temSilva))
+print('\nMétodo 1: Usando o método "find()": Se houver "Silva", \
+mostre em que posição ele aparece. Se não houver, imprima "-1": \
+{}.'.format(ondeEstaSilva))
+
+print('\nMétodo 2: Usando o operador "in": Existe "Silva" no nome? -> \
+{}.'.format('silva' in temSilva))
