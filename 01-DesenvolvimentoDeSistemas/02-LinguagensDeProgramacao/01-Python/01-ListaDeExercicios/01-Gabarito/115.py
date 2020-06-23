@@ -6,4 +6,4 @@ nova pessoa e listar todas as pessoas cadastradas.
 
 from utilidadesCeV import sistemaDeCadastro
 
-sistemaDeCadastro.iniciar('Titulo bastante comprido, passado na chamada')
+sistemaDeCadastro.iniciar('Cadastro de Pessoas do Moka')

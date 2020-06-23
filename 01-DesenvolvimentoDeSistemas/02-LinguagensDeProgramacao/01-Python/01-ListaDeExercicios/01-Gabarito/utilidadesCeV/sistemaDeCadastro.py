@@ -58,7 +58,7 @@ def verPessoas(titulo, comprimentoDoSeparador):
     except Exception as excecao:
         apresentarErro(excecao, 'verPessoas')
     else:
-        print('\n')
+        print('\n', end='')
         separador(repeticoes=comprimentoDoSeparador)
         print(f'{"Listagem das pessoas":^{comprimentoDoSeparador}}')
         separador(repeticoes=comprimentoDoSeparador)
@@ -75,13 +75,13 @@ def cadastrarPessoas(titulo, comprimentoDoSeparador):
         referenciaAoArquivo = open(arquivoDeCadastro, 'r')
     except Exception as excecao:
         apresentarErro(excecao, 'cadastrarPessoas')
-    
+
     try:
         referenciaAoArquivo = open(arquivoDeCadastro, 'a+')
     except Exception as excecao:
         apresentarErro(excecao, 'cadastrarPessoas')
     else:
-        print('\n')
+        print('\n', end='')
         separador(repeticoes=comprimentoDoSeparador)
         print('Informe os dados cadastrais: ')
         separador(repeticoes=comprimentoDoSeparador)
@@ -95,7 +95,7 @@ def cadastrarPessoas(titulo, comprimentoDoSeparador):
                 apresentarErro(excecao, 'cadastrarPessoas')
                 continue
             else:
-                if idade*(-1) > 0:
+                if idade < 0:
                     print('\nERRO: A idade não pode ser um número negativo.\n')
                     continue
                 break
@@ -147,6 +147,11 @@ no seguinte diretório: {arquivoDeCadastro}
         elif funcao == 'cadastrarPessoas':
             mensagem = f"""
 {cabecalhoAviso}Infome um valor inteiro para a idade.
+"""
+    else:
+        mensagem = f"""
+\n{cabecalhoAviso}Tentativa de interrupção pelo usuário (<CTRL+d>).
+Para finalizar, escolha a opção correta no menu.
 """
 
     print(mensagem)
