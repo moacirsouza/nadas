@@ -1,10 +1,12 @@
 print("""
-031) Desenvolva um programa que pergunte a distância de uma viagem em Km. Calcule o preço da
-passagem, cobrando R$0,50 por Km para viagens até 200Km e R$0,45 para viagens mais longas.
+031) Desenvolva um programa que pergunte a distância de uma viagem em Km.
+Calcule o preço da passagem, cobrando R$0,50 por Km para viagens até 200Km
+e R$0,45 para viagens mais longas.
 """)
 
 ### Entrada do programa: Recebe a distância como um número real ("float").
-distancia = float(input('Informe a distância que será percorrida na viagem (Em Km): '))
+distancia = float(input('Informe a distância que será percorrida na \
+viagem (Em Km): '))
 
 ### Define o "custoPorQuilometro" como cinquenta centavos...
 custoPorQuilometro = 0.5
