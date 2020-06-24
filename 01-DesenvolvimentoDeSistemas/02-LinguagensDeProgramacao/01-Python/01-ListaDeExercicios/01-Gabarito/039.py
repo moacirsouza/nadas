@@ -1,8 +1,8 @@
 print("""
-039) Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo
-com a sua idade, se ele ainda vai se alistar ao serviço, se é a hora de se alistar ou
-se já passou do tempo do alistamento. Seu programa também deverá mostrar o tempo que
-falta ou que passou do prazo.
+039) Faça um programa que leia o ano de nascimento de um jovem e informe,
+de acordo com a sua idade, se ele ainda vai se alistar ao serviço, se é a
+hora de se alistar ou se já passou do tempo do alistamento. Seu programa
+também deverá mostrar o tempo que falta ou que passou do prazo.
 """)
 
 ### Importação da classe "date", do módulo "datetime"
@@ -28,8 +28,8 @@ Estamos em {} e você tem, ou terá até o fim do ano, {} ano(s).
 
 ### O conjunto de testes é bem simples e apenas verifica se o jovem
 ### tem mais, menos ou exatamente 18 anos de idade. De acordo com
-### este critério a variável "mensagemFinal" recebe novas informações para
-### cada caso.
+### este critério a variável "mensagemFinal" recebe novas informações
+### para cada caso.
 if idadeDoJovem > idadeMinimaParaAlistamento:
     prazo = idadeDoJovem - idadeMinimaParaAlistamento
     mensagemFinal += """
