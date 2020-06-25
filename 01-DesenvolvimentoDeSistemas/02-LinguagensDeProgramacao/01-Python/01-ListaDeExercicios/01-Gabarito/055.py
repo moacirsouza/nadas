@@ -1,10 +1,11 @@
 print("""
-055) Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o
-maior e o menor peso lidos.
+055) Faça um programa que leia o peso de cinco pessoas. No final, mostre
+qual foi o maior e o menor peso lidos.
 """)
 
 for pessoa in range(1, 6):
-    peso = float(input('Informe o peso da {}ª pessoa: '.format(pessoa)).strip())
+    peso = float(input('Informe o peso da {}ª \
+pessoa: '.format(pessoa)).strip())
 
     if pessoa == 1:
         maior = menor = peso
