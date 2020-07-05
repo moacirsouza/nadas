@@ -1,6 +1,8 @@
 print("""
-021) Faça um programa em Python que abra e reproduza o Áudio de um arquivo MP3. 
+021) Faça um programa em Python que abra e reproduza o Áudio de um
+arquivo MP3.
 """)
+
 musica = '/home/moacir/Downloads/essaPassou.mp3'
 
 ### Método 1, usando uma biblioteca externa: playsound
@@ -25,5 +27,6 @@ musica = '/home/moacir/Downloads/essaPassou.mp3'
 ### através de uma biblioteca interna (builtin): os
 # import os
 # print('Usando o "mplayer" para reproduzir o áudio.')
-# print('Os comandos tradicionais do programa funcionam aqui.\nPressione "q" para suspender a reprodução')
+# print('Os comandos tradicionais do programa funcionam aqui.\
+# \nPressione "q" para suspender a reprodução')
 # os.system('mplayer ' + musica)

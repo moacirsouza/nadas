@@ -1,6 +1,6 @@
 print("""
-044) Elabore um programa que calcule o valor a ser pago por um produto, considerando o
-seu preço normal e condição de pagamento:
+044) Elabore um programa que calcule o valor a ser pago por um produto,
+considerando o seu preço normal e condição de pagamento:
 - À vista dinheiro/cheque: 10% de desconto
 - À vista no cartão: 5% de desconto
 - Em até 2x no cartão: Preço normal
@@ -15,7 +15,7 @@ precoDoProduto = float(input('Informe o preço do produto: R$ ').strip())
 
 formaDePagamento01 = 'À vista, no dinheiro ou cheque: 10% de desconto.'
 formaDePagamento02 = 'À vista, no cartão: 5% de desconto.'
-formaDePagamento03 = 'Em até 2 vezes, no cartão: Preço regular, sem alterações.'
+formaDePagamento03 = 'Em até 2 vezes, no cartão: Preço regular.'
 formaDePagamento04 = 'Em 3 vezes ou mais, no cartão: 20% de juros.'
 
 menuFormasDePagamento = """
@@ -61,7 +61,7 @@ Sua compra será dividida em 2 parcelas de R$ {:.2f}, sem juros.
 elif formaDePagamento == 4:
 
     precoDoProduto += precoDoProduto*0.2
-    parcelas = int(input('Em quantas parcelas a compra será divida? ').strip())
+    parcelas = int(input('Divir a compra em quantas parcelas? ').strip())
 
     if parcelas < 3:
         opcaoInvalida = True
@@ -71,7 +71,8 @@ Reinicie o processo de compra.
 """
     else:
         mensagemFinal += """{}
-Sua compra será dividida em {} parcelas de R$ {:.2f}, com acréscimo de 20% de juros.
+Sua compra será dividida em {} parcelas de R$ {:.2f},
+com acréscimo de 20% de juros.
 """.format(formaDePagamento04, parcelas, (precoDoProduto/parcelas))
 
 else:

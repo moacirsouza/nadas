@@ -1,19 +1,17 @@
 print("""
-079) Crie um programa onde o usuário possa digitar vários valores numéricos e
-cadastre-os em uma lista. Caso o número já exista lá dentro, ele não será
-adicioando. No final, serão exibidos todos os valores únicos digitados, em
+079) Crie um programa onde o usuário possa digitar vários valores numéricos
+e cadastre-os em uma lista. Caso o número já exista lá dentro, ele não será
+adicionado. No final, serão exibidos todos os valores únicos digitados, em
 ordem crescente.
 """)
 
 listaDeNumeros = []
 
 while True:
-    ### TODO: Verificar se a entrada do usuário pode ser convertida
-    ### para inteiro ao invés de assumir isso como possível.
     numero = int(input('Digite um número: ').strip())
 
     if numero in listaDeNumeros:
-        print(f'O número {numero} já existe na lista. Não posso adicioná-lo.')
+        print(f'O número {numero} já está na lista. Não posso adicioná-lo.')
     else:
         listaDeNumeros += [numero]
 

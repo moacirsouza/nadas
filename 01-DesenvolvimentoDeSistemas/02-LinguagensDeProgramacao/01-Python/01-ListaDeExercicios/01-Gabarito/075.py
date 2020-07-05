@@ -1,6 +1,6 @@
 print("""
-075) Desenvolva um programa que leia quatro valores pelo teclado e guarde-os em uma
-tupla. No final, mostre:
+075) Desenvolva um programa que leia quatro valores pelo teclado e
+guarde-os em uma tupla. No final, mostre:
 A) Quantas vezes apareceu o valor 9.
 B) Em que posição foi digitado o primeiro valor 3.
 C) Quais foram os números pares.
@@ -13,8 +13,9 @@ C) Quais foram os números pares.
 # quantosNoves = 0
 # essesSaoPares = ''
 # ondeEstaoOsTres = []
+# mensagem = 'Informe um número inteiro entre 0 e 9: '
 # for contador in range(0,4):
-#     listaTemporaria += [int(input('Informe um número inteiro entre 0 e 9: '))]
+#     listaTemporaria += [int(input(mensagem))]
 # tuplaComQuatroNumeros = tuple(listaTemporaria)
 # for item in range(0, len(tuplaComQuatroNumeros)):
 #     if tuplaComQuatroNumeros[item]%2 == 0:
@@ -27,7 +28,8 @@ C) Quais foram os números pares.
 # if len(ondeEstaoOsTres) == 0:
 #     posicaoDoPrimeiroTres = 'Não há números 3 nessa lista :(' 
 # else:
-#     posicaoDoPrimeiroTres = f'O primeiro três aparece na posição {ondeEstaoOsTres[0]}'
+#     posicaoDoPrimeiroTres = f'O primeiro três aparece na posição \
+#{ondeEstaoOsTres[0]}'
 
 ### Solução 1: Apesar de repetir código durante a solicitação de entrada de
 ### valores, esta solução não fere o acordo de não usar conhecimentos ainda
@@ -37,8 +39,8 @@ tuplaComQuatroNumeros = (int(input('Primeiro número: ')),
                          int(input('Terceiro número: ')),
                          int(input('Quarto número: ')))
 
-### Inicia a variável como string vazia, por causa do teste que será realizado
-### para verificar se existem, ou não, números pares na tupla.
+### Inicia a variável como string vazia, por causa do teste que será
+### realizado para verificar se existem, ou não, números pares na tupla.
 essesSaoPares = ''
 
 ### Avalia cada item, a fim de verificar se existem números pares. Em caso
@@ -62,8 +64,8 @@ posicaoDoPrimeiroTres = 'Não há números 3 nessa lista.'
 
 if 3 in tuplaComQuatroNumeros:
     ### A fim de evitar ultrapassar a coluna 80, a inicialização da variável
-    ### "posicaoDoPrimeiroTres" empregou o uso da a barra invertida como quebra
-    ### de linha.
+    ### "posicaoDoPrimeiroTres" empregou o uso da a barra invertida como
+    ### quebra de linha.
     posicaoDoPrimeiroTres = 'O primeiro número "3" aparece na posição: ' + \
                             str(tuplaComQuatroNumeros.index(3)+1)
 

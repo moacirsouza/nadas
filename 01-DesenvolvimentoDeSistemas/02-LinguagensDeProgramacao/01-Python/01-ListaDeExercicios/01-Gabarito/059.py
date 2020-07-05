@@ -1,12 +1,17 @@
 print("""
-059) Crie um programa que leia dois valores e mostre um menu com o o ao lado na tela:
-Seu programa deverá realizar a operação solicitada em cada caso.
+059) Crie um programa que leia dois valores e mostre um menu com o ao lado
+na tela. Seu programa deverá realizar a operação solicitada em cada caso.
 [1] somar
 [2] multiplicar
 [3] maior
 [4] novos números
 [5] sair do programa
 """)
+
+### TODO: Avaliar se, neste momento do curso as estruturas de
+### controle "continue" e "break" já haviam sido estudadas. Se
+### não, é preciso remover o bloco que verifica se a opção escolhida
+### está dentro dos valores do menu.
 
 mensagemDeBoasVindas = ' Seja bem vindo à Roleta das Operações! '
 print('[{:-^80}]'.format(mensagemDeBoasVindas))
@@ -43,15 +48,17 @@ saida = False
 while escolhaDoUsuario != len(listaDeOpcoes):
     escolhaDoUsuario = int(input(menu))
 
-    # if escolhaDoUsuario > len(listaDeOpcoes) or escolhaDoUsuario <= 0:
-    #     print('Opção inválida. Tente novamente')
-    #     continue
-    
+    if escolhaDoUsuario > len(listaDeOpcoes) or escolhaDoUsuario <= 0:
+        print('+---------------------------------------------+')
+        print('| Opção inválida. Use uma das opções do menu. |')
+        print('+---------------------------------------------+')
+        continue
+
     if listaDeOpcoes[escolhaDoUsuario-1] == 'somar':
         resultado = numero01 + numero02
     
     if listaDeOpcoes[escolhaDoUsuario-1] == 'multiplicar':
-      resultado = numero01 * numero02
+        resultado = numero01 * numero02
     
     if listaDeOpcoes[escolhaDoUsuario-1] == 'maior':
         maior = numero01
@@ -76,4 +83,4 @@ O resultado é: {}""".format(numero01,
                             listaDeOpcoes[escolhaDoUsuario-1],
                             resultado)
 
-    print(mensagemFinal)
+print(mensagemFinal)

@@ -1,8 +1,11 @@
 print("""
-009) Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada. 
+009) Faça um programa que leia um número inteiro qualquer e mostre na tela
+a sua tabuada. 
 """)
+
 numero = int(input('Digite um número inteiro: '))
 titulo = 'Tabuada do ' + str(numero)
+
 print('+{:-^16}+'.format(titulo))
 print('| {:>2} x  1 = {:>4} |'.format(numero,numero*1))
 print('| {:>2} x  2 = {:>4} |'.format(numero,numero*2))

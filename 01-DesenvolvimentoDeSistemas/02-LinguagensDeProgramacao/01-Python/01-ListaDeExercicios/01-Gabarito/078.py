@@ -1,12 +1,14 @@
 print("""
-078) Faça um programa que leia 5 valores numéricos de guarde-os em uma lista. No final,
-mostre qual foi o maior e o menor valor digitado e suas respectivas posições na lista.
+078) Faça um programa que leia 5 valores numéricos de guarde-os em uma
+lista. No final, mostre qual foi o maior e o menor valor digitado e suas
+respectivas posições na lista.
 """)
 
 listaComCincoValores = []
 
 for numero in range(1, 6):
-    entrada = int(input(f'Informe o {numero}º número (Posição {numero-1}): '))
+    mensagemDeEntrada = f'Informe o {numero}º número (Posição {numero-1}): '
+    entrada = int(input(mensagemDeEntrada))
     listaComCincoValores += [entrada]
 
 maiorNumero = max(listaComCincoValores)

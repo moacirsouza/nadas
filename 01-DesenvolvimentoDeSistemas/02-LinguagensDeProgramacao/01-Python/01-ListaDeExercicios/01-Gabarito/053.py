@@ -1,6 +1,6 @@
 print("""
-053) Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo,
-desconsiderando os espaços.
+053) Crie um programa que leia uma frase qualquer e diga se ela é um
+palíndromo, desconsiderando os espaços.
 """)
 
 frase = str(input('Digite a frase: '))
@@ -13,4 +13,4 @@ if fraseSemEspacos == fraseInvertida:
 
 mensagem = '{} é um palíndromo'.format(nao)
 
-print('A frase: "{}" {}'.format(frase, mensagem))
+print('A frase: "{}"{}'.format(frase, mensagem))

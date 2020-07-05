@@ -1,5 +1,6 @@
 print("""
-002) Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas.
+002) Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de
+boas-vindas.
 """)
 
 ### Entrada do programa: Recebe o nome como texto ("string").
@@ -18,6 +19,12 @@ print('[Sintaxe do Python2] Usando o símbolo de percentual:')
 print('É um prazer te conhecer, %s!\n' % nome)
 
 ### Método 3: Utilizando a sintaxe do método format, do
-### Python 3. Esta deve ser a sintaxe preferida.
-print('[Sintaxe do Python3] Usando o .format :')
+### Python 3. Este método pode ser usado, mas o mais
+### moderno é o f-string.
+print('[Sintaxe do Python3] Usando o .format:')
 print('É um prazer te conhecer, {}!\n'.format(nome))
+
+### Método 4: Utilizando a sintaxe f-string, do
+### Python 3. Esta deve ser a sintaxe preferida.
+print('[Sintaxe do Python3] Usando f-strings:')
+print(f'É um prazer te conhecer, {nome}!\n')
