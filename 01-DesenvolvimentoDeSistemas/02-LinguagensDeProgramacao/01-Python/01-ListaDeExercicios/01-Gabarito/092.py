@@ -1,8 +1,9 @@
 print("""
-092) Crie um programa que leia nome, ano de nascimento e carteira de trabalho
-e cadastre-o (com idade) em um dicionário. Se por acaso a CTPS for diferente 
-de ZERO, o dicionário receberá também o ano de contratação e o salário. Calcule
-e acrescente, além da idade, com quantos anos a pessoa vai se aposentar.
+092) Crie um programa que leia nome, ano de nascimento e carteira de
+trabalho e cadastre-o (com idade) em um dicionário. Se por acaso a CTPS
+for diferente de ZERO, o dicionário receberá também o ano de contratação
+e o salário. Calcule e acrescente, além da idade, com quantos anos a
+pessoa vai se aposentar.
 """)
 
 from datetime import date
@@ -22,8 +23,8 @@ print(f'{"Cadastre os dados do(a) beneficiário(a)":^{formatador}}')
 nome = input('Nome: ').strip()
 anoDeNascimento = int(input('Ano de Nascimento: ').strip())
 ctps = int(input('Número da CTPS (0 se não possuir): ').strip())
-
 idade = f'{anoAtual - anoDeNascimento} anos (Completos ou a completar)'
+
 beneficiario = {'Nome': nome, 'Idade': idade, 'CTPS': ctps}
 
 if ctps != 0:
@@ -43,10 +44,12 @@ else:
 print('-'*formatador)
 print(f'{"Resumo das informações cadastradas":^{formatador}}')
 print('-'*formatador)
+
 for chave, valor in beneficiario.items():
     reais = ''
     if chave == 'Salário':
         reais = 'R$ '
 
     print(f' - {chave}: {reais}{valor}')
+
 print('-'*formatador)

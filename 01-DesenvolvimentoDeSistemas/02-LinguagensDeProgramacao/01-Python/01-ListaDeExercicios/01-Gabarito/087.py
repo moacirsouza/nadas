@@ -36,6 +36,10 @@ maiorValorDaSegundaLinha = max(matriz[1])
 print('-'*len(titulo))
 print(saida[:-1])
 print('-'*len(titulo))
+
 print(f'A) A soma dos valores pares é {somaDosPares}.')
-print(f'B) A soma dos valores da terceira coluna é {somaDosNumerosDaTerceiraColuna}.')
+
+print(f'B) A soma dos valores da terceira coluna é \
+{somaDosNumerosDaTerceiraColuna}.')
+
 print(f'C) O maior valor da segunda linha é {maiorValorDaSegundaLinha}.')

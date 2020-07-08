@@ -1,7 +1,7 @@
 print("""
-085) Crie um programa onde o usuário possa digitar sete valores numéricos e cadastre-os
-em uma lista única que mantenha separados os valores pares e ímpares. No final, mostre
-os valores pares e ímpares em ordem crescente.
+085) Crie um programa onde o usuário possa digitar sete valores numéricos
+e cadastre-os em uma lista única que mantenha separados os valores pares
+e ímpares. No final, mostre os valores pares e ímpares em ordem crescente.
 """)
 
 paresEImpares = [[], []]
@@ -18,5 +18,6 @@ for contador in range(7):
 
 paresEImpares[0].sort()
 paresEImpares[1].sort()
-print(f'A lista de pares é: {paresEImpares[0]}.')
+
+print(f'\nA lista de pares é: {paresEImpares[0]}.')
 print(f'A de ímpares é: {paresEImpares[1]}')

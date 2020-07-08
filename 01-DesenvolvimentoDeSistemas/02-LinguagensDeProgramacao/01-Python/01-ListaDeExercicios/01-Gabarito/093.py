@@ -2,7 +2,8 @@ print("""
 093) Crie um programa que gerencie o aproveitamento de um jogador de futebol.
 O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai
 ler a quantidade de gols feitos em cada partida. No final, tudo isso será
-guardado em um dicionário, incluindo o total de gols feitos durante o campeonato.
+guardado em um dicionário, incluindo o total de gols feitos durante o
+campeonato.
 """)
 
 titulo = ' Programa de Aramazenamento e Aproveitamento de Jogadores '
@@ -18,10 +19,14 @@ print('-'*formatador)
 print(f'{titulo:^{formatador}}')
 print('-'*formatador)
 print(f'{"Cadastre as informações do jogdor":^{formatador}}')
-nomeDoJogador = input('Nome: ')
-numeroDePartidas = int(input(f'Quantas partidas {nomeDoJogador} jogou? '))
+
+nomeDoJogador = input('Nome: ').strip()
+
+numeroDePartidas = int(input(f'Quantas partidas {nomeDoJogador} \
+jogou? ').strip())
 
 print('-'*formatador)
+
 for partida in range(numeroDePartidas):
     numeroDeGols = int(input(f'Número de gols na partida {partida+1}: '))
     totalDeGols += numeroDeGols
@@ -32,4 +37,5 @@ aproveitamento.update(dict(Nome=nomeDoJogador,
                            TotalDeGols=totalDeGols,
                            GolsPorPartida=golsPorPartida))
 
+### TODO: Melhorar a apresentação dos resultados
 print(aproveitamento)

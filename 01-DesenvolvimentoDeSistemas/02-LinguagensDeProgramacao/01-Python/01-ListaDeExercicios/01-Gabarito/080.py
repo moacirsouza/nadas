@@ -6,8 +6,8 @@ sort()). No final, mostre a lista ordenada na tela.
 
 ### A solução final foi baseada no código postado no seguinte comentário do
 ### usuário João Pedro Calixto, no vídeo de resolução do Exercício 080 do
-### Curso de Python do Curso em Vídeo: https://bit.ly/2D78pyX (Ver comentário
-### em destaque)
+### Curso de Python do Curso em Vídeo: https://bit.ly/2D78pyX (Ver
+### comentário em destaque)
 
 ### TODO: Documentar melhor a lógica usando comentários
 listaComCincoNumeros = []
@@ -43,7 +43,7 @@ print(f'A lista, ordenada é: {listaComCincoNumeros}')
 #+-------------------------------------------------------+
 #|   | indice | valor | entrada |  entrada > valor | pdi |
 #+-------------------------------------------------------+
-#| * |    0   |   0   |    0    |       não        |  0  |
+#| * |    0   |   9   |    0    |       não        |  0  |
 #+-------------------------------------------------------+
 #| + |    0   |   0   |    2    |       sim        |  1  |
 #|   |    1   |   9   |    2    |       nao        |  1  |

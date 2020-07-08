@@ -1,6 +1,6 @@
 print("""
-090) Faça um programa que leia nome e média de um aluno, guardando também a situação
-em um dicionário. No final, mostre o conteúdo a estrutura na tela.
+090) Faça um programa que leia nome e média de um aluno, guardando também
+a situação em um dicionário. No final, mostre o conteúdo a estrutura na tela.
 """)
 
 nome = input('Informe o nome do(a) aluno(a): ').strip()
@@ -15,7 +15,7 @@ elif 0 <= media < 5:
     situacao = 'Reprovado'
 else:
     erro = 1
-    situacao = 'Falha na entrada de dados. Procure a Adminstração da Escola.'
+    situacao = 'Erro ao informar dados. Procure a Adminstração da Escola.'
 
 if erro == 1:
     print(situacao)

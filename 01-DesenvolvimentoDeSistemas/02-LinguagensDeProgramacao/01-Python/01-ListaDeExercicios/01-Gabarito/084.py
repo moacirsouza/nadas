@@ -1,6 +1,6 @@
 print("""
-084) Faça um programa que leia nome e peso de várias pessoas, guardando tudo em uma
-lista. No final, mostre:
+084) Faça um programa que leia nome e peso de várias pessoas, guardando tudo
+em uma lista. No final, mostre:
 A) Quantas pessoas foram cadastradas.
 B) Uma listagem com as pessoas mais pesadas.
 C) Uma listagem com as pessoas mais leves.
@@ -35,7 +35,8 @@ while True:
 
         if continuar == 's' or continuar == 'n':
             break
-        print('Digite S/s ou N/n para prosseguir ou suspender, respectivamente.')
+        print('Digite S/s ou N/n para prosseguir ou suspender, \
+respectivamente.')
     
     if continuar == 'n':
         break
@@ -46,6 +47,10 @@ for item in listaDePessoasEPesos:
     elif item[1] == menorPeso:
         pessoasMaisLeves += item[0] + ', '
 
-print(f'{len(listaDePessoasEPesos)} pessoas foram cadastradas.')
-print(f'O maior peso encontrado foi {maiorPeso}Kg. As pessoas deste grupo são: {pessoasMaisPesadas[:-2]}.')
-print(f'O menor peso encontrado foi {menorPeso}Kg. As pessoas deste grupo são: {pessoasMaisLeves[:-2]}.')
+print(f'\n{len(listaDePessoasEPesos)} pessoas foram cadastradas.')
+
+print(f'O maior peso encontrado foi {maiorPeso}Kg. As pessoas deste grupo \
+são: {pessoasMaisPesadas[:-2]}.')
+
+print(f'O menor peso encontrado foi {menorPeso}Kg. As pessoas deste grupo \
+são: {pessoasMaisLeves[:-2]}.')

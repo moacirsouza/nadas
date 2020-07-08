@@ -1,6 +1,6 @@
 print("""
-081) Crie um programa que vai ler vários números e colocar em uma lista. Depois disso,
-mostre:
+081) Crie um programa que vai ler vários números e colocar em uma lista.
+Depois disso, mostre:
 A) Quantos números foram digitados.
 B) A lista de valores, ordenada de forma decrescente.
 C) Se o valor 5 foi digitado e está ou não na lista.
@@ -17,7 +17,9 @@ while True:
 
         if querContinuar == 's' or querContinuar == 'n':
             break
-        print('ATENÇÃO: Digite S/s ou N/n, respectivamente, para continuar ou sair do programa.')
+        
+        print('ATENÇÃO: Digite S/s ou N/n, respectivamente, para continuar \
+ou sair do programa.')
 
     if querContinuar == 'n':
         listaDeNumeros.sort(reverse=True)

@@ -1,7 +1,8 @@
 print("""
-089) Crie um programa que leia nome e duas notas de vários alunos e guarde tudo em
-uma lista composta. No final, mostre um boletim contendo a média de cada um e permita
-que o usuário possa mostrar as notas de cada aluno individualmente.
+089) Crie um programa que leia nome e duas notas de vários alunos e guarde
+tudo em uma lista composta. No final, mostre um boletim contendo a média de
+cada um e permita que o usuário possa mostrar as notas de cada aluno
+individualmente.
 """)
 
 alunos = []
@@ -14,28 +15,40 @@ print('-'*len(titulo))
 ### Preenchimento da lista de alunos com nome, duas notas e a média ente elas
 while True:
     ### A cada iteração uma lista com dois elementos é adicionada a "alunos".
-    ### O primeiro, i.e. "aluno[0]", é uma "string" vazia, onde o nome do aluno
-    ### será armazenado.
+    ### O primeiro, i.e. "aluno[0]", é uma "string" vazia, onde o nome do
+    ### aluno será armazenado.
     ### O segundo, i.e. "alunos[1]", é uma nova lista contendo três zeros.
-    ### Estes zeros correspondem, respectivamente, às duas notas do aluno e à
-    ### média aritmética delas
+    ### Estes zeros correspondem, respectivamente, às duas notas do aluno
+    ### e à média aritmética delas
     alunos.append(['', [0, 0, 0]])
 
-    ### TODO: Fazer uma validação para que as notas informadas não possam
-    ### ser números negativos ou maiores que 10.
     nome = input(f'Aluno {indice+1:02d}: ').strip()
-    nota01 = float(input('Nota 01: ').strip())
-    nota02 = float(input('Nota 02: ').strip())
+    
+    while True:
+        nota01 = float(input('Nota 01: ').strip())
+
+        if nota01 >= 0 and nota01 <= 10:
+            break
+        print('Informe uma nota válida. Valores entre 0 e 10.')
+
+    while True:
+        nota02 = float(input('Nota 02: ').strip())
+        
+        if nota02 >= 0 and nota02 <= 10:
+            break
+        print('Informe uma nota válida. Valores entre 0 e 10.')
+    
     media = (nota01+nota02)/2
 
     ### Cada indexação com a variável "indice" corresponde a um aluno.
     ### A partir daí, o primeiro índice zero ("[0]") corresponde ao nome
     ### do aluno
     alunos[indice][0] = nome
-    ### Aqui o primeiro índice um ("[1]") acessa a lista que contém as notas
-    ### e média de cada aluno. Estes últimos, por sua vez, são acessados,
-    ### respectivamente, pelos últimos indices zero ("[0]"), um ("[1]") e
-    ### dois ("[2]")
+
+    ### Aqui o primeiro índice um ("[1]") acessa a lista que contém as
+    ### notas e média de cada aluno. Estes últimos, por sua vez, são
+    ### acessados, respectivamente, pelos últimos indices zero ("[0]"),
+    ### um ("[1]") e dois ("[2]")
     alunos[indice][1][0] = nota01
     alunos[indice][1][1] = nota02
     alunos[indice][1][2] = media
@@ -45,7 +58,8 @@ while True:
 
         if continuar == 's' or continuar == 'n':
             break
-        print('Digite S/s ou N/n para prosseguir ou suspender, respectivamente.')
+        print('Digite S/s ou N/n para prosseguir ou suspender, \
+respectivamente.')
     
     if continuar == 'n':
         break
@@ -59,23 +73,28 @@ while True:
 print('-'*len(titulo))
 print('{:^{tamanho}}'.format('Boletins', tamanho=len(titulo)))
 print('-'*len(titulo))
-print('{:<3} - {:<30} {}'.format('Número', 'Aluno', 'Média'))
+print('{:<3} |{:^30}| {}'.format('Número', 'Aluno', 'Média'))
 print('-'*len(titulo))
 
 for posicao, item in enumerate(alunos):
-    ### Aqui a variável "posicao" guarda o índice de cada lista que contém
-    ### o nome do aluno, as notas e a média. Essas listas, por sua vez,
-    ### são referenciadas, a cada iteração, por "item". É importante lembar
-    ### que estas informações estão armazenadas de forma posicional, a saber:
-    ### item[0] é o nome, "item[1][0]" e "item[1][1]" as duas primeiras notas,
-    ### respectivamente, e "item[1][2]", a média
-    print(f'{posicao+1:06d} - {item[0]:.<30.25} {item[1][2]:>5,.2f}')
+    ### Aqui a variável "posicao" guarda o índice de cada lista que
+    ### contém o nome do aluno, as notas e a média. Essas listas, por
+    ### sua vez, são referenciadas, a cada iteração, por "item". É
+    ### importante lembar que estas informações estão armazenadas de
+    ### forma posicional, a saber:
+    ### - item[0]: ...... Nome
+    ### - item[1][0]: ... Primeira nota
+    ### - item[1][1]: ... Segunda nota
+    ### - item[1][2]: ... Média
+    print(f'{posicao+1:06d} |{item[0]:.<30.25}|{item[1][2]:>5,.2f}')
 
 print('-'*len(titulo))
 
 ### Apresentação das notas de cada aluno, individualmente
 while True:
-    boletimParaApresentar = int(input('Ver boletim (999 para sair): ').strip())
+    mensagemDeSaida = 'Ver boletim (999 para sair): '
+    boletimParaApresentar = int(input(mensagemDeSaida).strip())
+    
     if boletimParaApresentar == 999:
         print('Programa finalizado!')
         break

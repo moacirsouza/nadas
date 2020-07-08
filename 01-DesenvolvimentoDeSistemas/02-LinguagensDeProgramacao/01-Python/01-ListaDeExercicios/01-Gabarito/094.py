@@ -1,7 +1,7 @@
 print("""
-094) Crie um programa que leia nome, sexo e idade de várias pessoas, guardando os
-dados de cada pessoa em um dicionário e todos os dicionários em uma lista. No final,
-mostre: 
+094) Crie um programa que leia nome, sexo e idade de várias pessoas,
+guardando os dados de cada pessoa em um dicionário e todos os dicionários
+em uma lista. No final, mostre: 
 A) Quantas pessoas foram cadastradas
 B) A média de idade
 C) Uma lista com as mulheres
@@ -20,6 +20,7 @@ print('-'*formatador)
 print(titulo)
 print('-'*formatador)
 print(f'{"Preencha as informações abaixo":^{formatador}}')
+
 while True:
     nome = input('Nome: ').strip()
     
@@ -38,7 +39,8 @@ while True:
 
         if continuar == 's' or continuar == 'n':
             break
-        print('Digite S/s ou N/n para prosseguir ou suspender, respectivamente.')
+        print('Digite S/s ou N/n para prosseguir ou suspender, \
+respectivamente.')
 
     pessoa = dict(Nome=nome, Sexo=sexo, Idade=idade)
     cadastro.append(pessoa.copy())
@@ -70,6 +72,7 @@ if not idadesAcimaDaMedia:
 print('-'*formatador)
 print(f'{"Resultado":^{formatador}}')
 print('-'*formatador)
+
 print(f'A) Quantidade de pessoas cadastradas: {quantidadePessoas}.')
 print(f'B) Lista das mulheres: {", ".join(listaDasMulheres)}.')
 print(f'C) A média de idade do(s) cadastrado(s) é {mediaDasIdades:.2f}.')

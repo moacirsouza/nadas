@@ -1,6 +1,7 @@
 print("""
-095) Aprimore o desafio 93 para que ele funcione com vários jogadores, incluindo
-um sistema de visualização de detalhes do aproveitamento de cada jogador.
+095) Aprimore o desafio 93 para que ele funcione com vários jogadores,
+incluindo um sistema de visualização de detalhes do aproveitamento de
+cada jogador.
 """)
 
 ### TODO: Reorganizar o código para promover maior legibilidade
@@ -19,7 +20,8 @@ print(f'{"Cadastre as informações do jogador":^{formatador}}')
 
 while True:
     nomeDoJogador = input('Nome: ')
-    numeroDePartidas = int(input(f'Quantas partidas "{nomeDoJogador}" jogou? '))
+    numeroDePartidas = int(input(f'Quantas partidas "{nomeDoJogador}" \
+jogou? '))
 
     print('-'*formatador)
     for partida in range(numeroDePartidas):
@@ -46,7 +48,8 @@ while True:
 
         if continuar == 's' or continuar == 'n':
             break
-        print('Digite S/s ou N/n para prosseguir ou suspender, respectivamente.')
+        print('Digite S/s ou N/n para prosseguir ou suspender, \
+respectivamente.')
 
     if continuar == 'n':
         break
@@ -57,7 +60,8 @@ print('-'*formatador)
 print(f'Registro - Nome - Gols por Partida - Total de Gols')
 
 for registro, dicionario in enumerate(time):
-    print(f'{registro+1:08d} - {dicionario["Nome"]} - {dicionario["GolsPorPartida"]} - {dicionario["TotalDeGols"]}')
+    print(f'{registro+1:08d} - {dicionario["Nome"]} - \
+{dicionario["GolsPorPartida"]} - {dicionario["TotalDeGols"]}')
 
 print('-'*formatador)
 print(f'{"Apresentação de Resultado por Jogador":^{formatador}}')
