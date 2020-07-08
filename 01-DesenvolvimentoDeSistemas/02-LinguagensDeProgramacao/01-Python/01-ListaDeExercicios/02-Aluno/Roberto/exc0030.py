@@ -1,14 +1,10 @@
 print("""
-029) Escreva um programa que leia a velocidade de um carro. Se ele ultrapassar 80Km/h,
-mostre uma mensagem dizendo que ele foi multado. A multa vai custar R$7,00 por cada
-quilômetro acima do limite.
+030) Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou ÍMPAR.
 """)
-velocidade = float(input('Velocidade de Veículo (Em Km/h): '))
-if velocidade > 80:
-    valordamulta = (velocidade - 80) * 7
-    print('Você foi multado')
-    print('O valor da multa foi: {:.2f}'.format(valordamulta)) 
+numero = int(input('Digite um número: '))
+if numero%2 == 0:
+    print('O número é par')
 else:
-    print('Você está dentro dos limites de velocidade')
+    print('O número é impar')
 
 
