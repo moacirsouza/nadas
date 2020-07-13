@@ -1,6 +1,6 @@
 print("""
-105) Faça um programa que tenha uma função notas() que pode receber várias notas
-de alunos e vai retornar um dicionário com as seguintes informações:
+105) Faça um programa que tenha uma função notas() que pode receber várias
+notas de alunos e vai retornar um dicionário com as seguintes informações:
 
 - Quantidade de notas
 - A maior nota
@@ -40,7 +40,7 @@ def apresentaNotas(*notasDosAlunos, apresentaSituacao=False):
 
     if 0 < media <= 5.9:
         situacao = 'RUIM'
-    elif 5.9 < media <= 8:
+    elif 5.9 < media < 9:
         situacao = 'BOA'
     else:
         situacao = 'EXCELENTE'
@@ -55,6 +55,6 @@ def apresentaNotas(*notasDosAlunos, apresentaSituacao=False):
     
     return resposta
 
-resposta = apresentaNotas(8.6, 7.7, 8.9, 10, 2.5, 7, 8, 1.0, 0.5, 3.2, apresentaSituacao=True)
+resposta = apresentaNotas(9.6, 8.9, 9, apresentaSituacao=True)
 print(resposta)
 # help(apresentaNotas)

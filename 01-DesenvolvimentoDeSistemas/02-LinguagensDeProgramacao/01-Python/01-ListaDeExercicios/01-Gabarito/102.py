@@ -1,8 +1,8 @@
 print("""
-102) Crie um programa que tenha uma função fatorial() que receba dois parâmetros:
-o primeiro que indique o número a calcular e outro chamado show, que será um valor
-lógico (opcional) indicando se será mostrado ou não na tela o processo de cálculo
-do fatorial.
+102) Crie um programa que tenha uma função fatorial() que receba dois
+parâmetros: o primeiro que indique o número a calcular e outro chamado
+show, que será um valor lógico (opcional) indicando se será mostrado ou
+não na tela o processo de cálculo do fatorial.
 """)
 
 def fatorial(numero, show=False):
@@ -30,5 +30,20 @@ def fatorial(numero, show=False):
     return resposta
 
 
-entrada = 5
-print(f'O fatorial de {entrada} é: {fatorial(5, show=True)}')
+entrada = int(input('Escolha um número inteiro para mostrar o fatorial: '))
+
+while True:
+    escolha = input('Deseja mostrar o processo de \
+cálculo? (s/n) ').strip().lower()
+
+    if escolha == 's' or escolha == 'n':
+        break
+
+    print('Use apenas S/s ou N/n para informar sua escolha.')
+
+show = False
+
+if escolha == 's':
+    show=True
+
+print(f'O fatorial de {entrada} é: {fatorial(entrada, show)}')

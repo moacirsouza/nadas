@@ -13,4 +13,4 @@ def escreva(mensagem, caractereDeFormatacao='~'):
 
 
 mensagemDoUsuario = input('Digite sua mensagem: ').strip()
-escreva(mensagemDoUsuario, '£')
+escreva(mensagemDoUsuario, '-')

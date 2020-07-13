@@ -29,9 +29,9 @@ jogou? '))
         totalDeGols += numeroDeGols
         golsPorPartida.append(numeroDeGols)
 
-    ### O uso do método "copy()" na chave "GolsPorPartida" é necessário para
-    ### evitar o acúmulo de informações dentro da lista "golsPorPartida"
-    ### entre as iterações do laço principal
+    ### O uso do método "copy()" na chave "GolsPorPartida" é necessário
+    ### para evitar o acúmulo de informações dentro da lista
+    ### "golsPorPartida" entre as iterações do laço principal
     jogador = dict(Nome=nomeDoJogador,
                    Partidas=numeroDePartidas,
                    TotalDeGols=totalDeGols,
@@ -57,11 +57,11 @@ respectivamente.')
 print('-'*formatador)
 print(f'{"Resultados":^{formatador}}')
 print('-'*formatador)
-print(f'Registro - Nome - Gols por Partida - Total de Gols')
+print(f'{"Registro":<} - {"Nome":<{31}} - Total de Gols')
 
 for registro, dicionario in enumerate(time):
-    print(f'{registro+1:08d} - {dicionario["Nome"]} - \
-{dicionario["GolsPorPartida"]} - {dicionario["TotalDeGols"]}')
+    print(f'{registro+1:08d} - {dicionario["Nome"]:.<31.25} - \
+{dicionario["TotalDeGols"]:^14d}')
 
 print('-'*formatador)
 print(f'{"Apresentação de Resultado por Jogador":^{formatador}}')
@@ -78,6 +78,8 @@ while True:
     nome = dadosDoJogador['Nome']
     gols = dadosDoJogador['GolsPorPartida']
 
-    print(f'Resumo para o jogador {nome}')
+    print('-'*formatador)
+    print(f'Aproveitamento do jogador "{nome}":')
     for jogo, gol in enumerate(gols):
-        print(f'Jogo {jogo+1}: {gol} gol(s)')
+        print(f'Jogo {jogo+1}: {gol:02d} gol(s)')
+    print('-'*formatador)
