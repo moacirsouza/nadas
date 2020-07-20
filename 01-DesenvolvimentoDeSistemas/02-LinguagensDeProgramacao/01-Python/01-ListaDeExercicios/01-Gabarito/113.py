@@ -1,8 +1,9 @@
 print("""
-113) Reescreva a função leiaInt() que fizemos no desafio 104, incluindo agora a
-possibilidade da digitação de um número de tipo inválido. Aproveite e crie também
-uma função leiaFloat() com a mesma funcionalidade.
+113) Reescreva a função leiaInt() que fizemos no desafio 104, incluindo
+agora a possibilidade da digitação de um número de tipo inválido. Aproveite
+e crie também uma função leiaFloat() com a mesma funcionalidade.
 """)
+
 
 def leiaInt(mensagem='Número inteiro: '):
     while True:
@@ -26,7 +27,6 @@ numéro real válido')
             continue
         else:
             return numero
-
 
 supostoNumeroInteiro = leiaInt('Informe um número inteiro: ')
 supostoNumeroReal = leiaFloat('Informe um número real: ')

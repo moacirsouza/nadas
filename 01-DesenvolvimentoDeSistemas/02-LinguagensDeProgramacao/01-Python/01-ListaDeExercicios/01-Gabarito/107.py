@@ -1,7 +1,7 @@
 print("""
-107) Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(),
-diminuir(), dobro() e metade(). Faça também um programa que importe esse módulo e
-use algumas dessas funções.
+107) Crie um módulo chamado moeda.py que tenha as funções incorporadas
+aumentar(), diminuir(), dobro() e metade(). Faça também um programa que
+importe esse módulo e use algumas dessas funções.
 """)
 
 ### O truque aqui foi transformar o diretório "modulos" em um
@@ -22,10 +22,12 @@ precoPelaMetade = moeda.metade(preco)
 
 print('-'*tamanhoDaBarra)
 print(f'{"Os valores informados foram":^{tamanhoDaBarra}}')
-print(f"""
-Preço: {preco}
+print('-'*tamanhoDaBarra)
+print(f"""Preço: {preco}
 Taxa de incremento: {incremento}%
 Taxa de redução: {decremento}%""")
+print('-'*65)
+print(f'{"Resultados":^{tamanhoDaBarra}}')
 print('-'*65)
 print(f'O valor {preco}, ao sofrer um aumento de {incremento}% fica igual a {precoIncrementado}.')
 print(f'O valor {preco}, ao sofrer uma reducao de {decremento}% fica igual a {precoDecrementado}.')

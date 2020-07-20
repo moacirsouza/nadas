@@ -47,6 +47,9 @@ def resumo(preco=0, taxaDeAumento=0, taxaDeReducao=0):
     precoIncrementado = aumentar(preco, taxaDeAumento, True)
     precoReduzido = diminuir(preco, taxaDeReducao, True)
 
+### TODO: Melhorar a formatação da saída, levando em conta
+### coisas como o possível tamanho variável da tabela, de
+### acordo com o comprimento do preço informado etc.
     retorno = f"""
     -------------------------------
             RESUMO DO VALOR

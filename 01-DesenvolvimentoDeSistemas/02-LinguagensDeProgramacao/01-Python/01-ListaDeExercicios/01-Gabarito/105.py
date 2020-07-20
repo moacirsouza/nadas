@@ -11,6 +11,7 @@ notas de alunos e vai retornar um dicionário com as seguintes informações:
 Adicione também as docstrings dessa função para consulta pelo desenvolvedor.
 """)
 
+
 def apresentaNotas(*notasDosAlunos, apresentaSituacao=False):
     """Função que sumariza informações sobre notas e média de uma turma
     de tamanho variável.

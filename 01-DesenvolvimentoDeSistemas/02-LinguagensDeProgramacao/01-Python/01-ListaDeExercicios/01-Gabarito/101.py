@@ -12,6 +12,7 @@ nas eleições.
 
 from datetime import date
 
+
 def voto(anoDeNascimento):
 
     anoAtual = date.today().year
@@ -28,7 +29,6 @@ def voto(anoDeNascimento):
     retorno = ' '.join([mensagemBase, situacao])
     
     return retorno
-
 
 nascimento = int(input('Informe seu ano de nascimento: ').strip())
 resultado = voto(nascimento)
