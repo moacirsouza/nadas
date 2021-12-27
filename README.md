@@ -18,3 +18,5 @@ Os materiais contidos aqui, exceto quando expressamente indicado o contrário, f
 O respositório deve ser utilizado apenas para a manutenção de códigos ou elementos específicos relacionados aos tópicos estudados, como arquivos de configuração, de perfis de usuário etc.
 
 O documento principal, formatado com informações técnicas, referências bibliográficas e detalhes dos materiais de estudo, pode ser acessado [aqui](https://docs.google.com/document/d/1xYa8GyP1_gE6QiAzuJkoPgP3zywaXRNtfOKLpRqNK94/edit?usp=sharing) (Este é um documento privado, mantido no Google Drive. É necessário autenticar-se para acessá-lo).
+
+Oi Monja! _o/ <3
