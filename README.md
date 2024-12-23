@@ -1,6 +1,6 @@
 # NaDAS: Networking and Development Advanced Studies
 
-Repositório do projeto "NaDAS: Networking and Development Advanced Studies", anteriormente conhecido como "Estudando para ser DevOps/SRE", de autoria de [Moacir da Cruz Souza Filho](https://github.com/moacirsouza), a.k.a. Moka, e [Roberto José Lopes Mendonça](https://github.com/robertolopesmendonca).
+Repositório do projeto "NaDAS: Networking and Development Advanced Studies", anteriormente conhecido como "Estudando para ser DevOps/SRE", de autoria de [Moacir Filho](https://github.com/moacirsouza), a.k.a. Moka, e [Roberto Mendonça](https://github.com/robertolopesmendonca).
 
 Este projeto é composto do estudo dos seguintes tópicos:
 
@@ -13,7 +13,7 @@ Este projeto é composto do estudo dos seguintes tópicos:
 
 Os materiais contidos aqui, exceto quando expressamente indicado o contrário, foram criados pelos autores e são de suas respectivas propriedades intelectuais. A utilização deste conteúdo fica restrita sob os termos da [Licença MIT associada ao repositório](https://github.com/moacirsouza/nadas/blob/master/LICENSE).
 
-# Do uso do Repositório
+## Do uso do Repositório
 
 O respositório deve ser utilizado apenas para a manutenção de códigos ou elementos específicos relacionados aos tópicos estudados, como arquivos de configuração, de perfis de usuário etc.
 
